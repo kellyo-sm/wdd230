@@ -15,15 +15,47 @@ header, main, footer {
 
 header {
     margin: 1rem auto;
-    border: 1px solid #bbb;
+    border: 1px solid rgb(19, 20, 27);
     padding: .5rem;
-    background-color: lightsteelblue;
+    background-color: rgb(199, 209, 221);
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
+    border-radius: 5%;
 }
 
 header img {
-    width: 100%;
+    width: 70%;
+    border-radius: 30%; 
+    margin-left: 2rem;  
+}
 
+header h1 {
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    margin: 30px;
+    border-bottom: 2px solid rgb(16, 2, 49);
+}
+
+main ul li {
+    font-size: 1.1em;
+    
+}
+
+footer {
+    font-size: small;
+    padding: 30px;
+    line-height: 1.5rem;
+    background-color: rgb(199, 209, 221);
+    border-radius: 20%;
+    margin-top: 2rem;
+    border:1px solid rgb(19, 20, 27);
+    text-align: center;
+}
+
+.info {
+    grid-column: 1/5;
 }
