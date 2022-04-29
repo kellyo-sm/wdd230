@@ -1,0 +1,78 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Nanum Myeongjo', serif;;
+}
+
+body {
+    background-color: rgb(255, 249, 240);
+}
+
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgb(70, 49, 32);
+    color: rgb(255, 249, 240);
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1rem;
+
+}
+
+article {
+    
+    background-color: rgb(243, 234, 222);
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.article-heading {
+    padding-bottom: 1rem;
+    background-color: rgb(70, 49, 32);
+    color:rgb(255, 249, 240);
+    padding: 1rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+article img {
+    max-width: 15rem;
+}
+
+
+article p {
+    margin-top: 2rem;
+}
+
+
+
+footer {
+    font-size: small;
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    background-color: rgb(70, 49, 32);
+    color: rgb(255, 249, 240);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+footer a {
+    color:rgb(255, 249, 240);
+    float: left;
+    text-decoration: none;
+}

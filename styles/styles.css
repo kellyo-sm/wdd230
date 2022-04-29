@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
 }
 
 body {
@@ -13,25 +14,31 @@ header, main, footer {
     margin: 0 auto;
 }
 
-header {
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+header {   
     margin: 1rem auto;
-    border: 1px solid rgb(19, 20, 27);
     padding: .5rem;
     background-color: rgb(199, 209, 221);
-    display: grid;
-    grid-template-columns: 200px 1fr;
     align-items: center;
-    border-radius: 5%;
 }
 
 header img {
-    width: 70%;
-    border-radius: 30%; 
-    margin-left: 2rem;  
+    border-radius: 5%;
 }
 
 header h1 {
     text-align: center;
+}
+
+main {
+    margin-bottom: 2rem;
 }
 
 main h2 {
@@ -41,18 +48,21 @@ main h2 {
 }
 
 main ul li {
-    font-size: 1.1em;
-    
+    font-size: 1rem;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 footer {
     font-size: small;
     padding: 30px;
     line-height: 1.5rem;
-    background-color: rgb(199, 209, 221);
-    border-radius: 20%;
-    margin-top: 2rem;
-    border:1px solid rgb(19, 20, 27);
+    background-color: rgb(199, 209, 221);   
     text-align: center;
+    
 }
 
