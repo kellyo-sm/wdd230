@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFFFC;
+    
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.65em;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #21295c;
+    margin-bottom: 2.5rem;
+}
+
+header {
+    margin: 1rem auto;
+    padding: .5rem;
+    background-color: #21295c;
+    align-items: center;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+main {
+    margin-top: 2.5rem;
+}
+
+article {
+    text-align: left;
+    padding: 1.5rem 2.5rem;
+}
+
+footer {
+    background-color: #21295c;
+    color: #FDFFFC;
+    padding: 1rem;
+    font-size: small
+}
+
+footer p {
+    font-size: small;
+    margin: 15px;
+    color: #FDFFFC;
+}
+
+footer a {
+    color: #FDFFFC;
+    text-decoration: none;
+}
+
+.site-name {
+    font-size: 2rem;
+}
+
+
+.active {
+    color: #fdfffc;
+    text-decoration: none;
+}
+
+.personas {
+    margin: 4rem;
+}
+
+.art-1, .art-2 {
+    font-weight: normal;
+}
+
+.art-1 {
+    border: 5px double #998DA0;
+    margin-bottom: 1rem;
+}
+
+.art-2 {
+    border: 5px double #065a82;
+}
+
+.scenario {
+    padding: 2.75rem;
+}
+
+.scenario, h2 {
+    text-align: center;
+}
+
+.scenario, li {
+    
+    text-align: justify;
+    padding-left: 3.5rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+    line-height: 2.3rem;
+}
+
+.colors {
+    
+    display: flex;
+    text-align: center;
+    font-size: x-large;
+    margin: 2rem;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.colors p {
+    border: 5px double #21295c;
+    padding: 0.75rem;
+}
+
+.colors p:nth-child(1) {
+    background-color: #21295c;
+    color: #FDFFFC;
+}
+
+.colors p:nth-child(2) {
+    background-color: #998DA0;
+}
+
+.colors p:nth-child(3) {
+    background-color: #065a82;
+    color: #FDFFFC;
+}
+
+.colors p:nth-child(4) {
+    background-color: #426a5a;
+    color: #FDFFFC;
+}
+
+.colors p:nth-child(5) {
+    background-color: #fdfffc;
+}
