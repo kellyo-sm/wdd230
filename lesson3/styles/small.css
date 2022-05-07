@@ -34,6 +34,7 @@ h4 {
 
 p {
     font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 h1, h2, h3, p {
@@ -65,7 +66,8 @@ nav ul li a {
 }
 
 main {
-    margin-top: 2.5rem;
+    margin-top:2.5rem;
+    padding: 0 1rem;
 }
 
 article {
@@ -138,6 +140,7 @@ footer a {
 .colors {
     
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     font-size: x-large;
     margin: 2rem;
