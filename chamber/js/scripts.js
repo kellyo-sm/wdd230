@@ -1,4 +1,4 @@
-
+// header date
 const datefield = document.getElementsByClassName("date");
 const datefieldUK = document.querySelector("aside");
 
@@ -13,6 +13,20 @@ datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 
 
+// responsive navigation
+function toggleMenu()  {
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getAnimations("hambtn").classList.toggle("open");
+}
+
+const x = document.getElementById("hambtn")
+x.onclick = toggleMenu;
+
+
+
+
+
+// footer date/time/last updated
 var date = (new Date().getFullYear());
 document.getElementById("year").innerHTML = date;
 
