@@ -1,14 +1,7 @@
 @media (min-width: 60rem) {
-
-    nav ul {
-            display: flex;
-        }
-
-    main {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            margin: 0 1rem;
-        }
+nav ul#primaryNav {
+        display: flex;
+    }
 
     .hero-img {
         grid-column: 2/3;

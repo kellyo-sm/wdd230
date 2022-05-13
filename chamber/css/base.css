@@ -7,15 +7,19 @@
 
 body {
     background-color: #FDFFFC;
-    color: #21295C;
-    max-width: 1000px;
-    margin: 0 auto;  
+    color: #21295C; 
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5, 1fr));
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
+    /* padding: 2rem; */
 } 
 
 nav {
@@ -66,27 +70,11 @@ nav button:hover {
 
 
 main {
-    display: block;
-    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
 }   
 
-article {
-    padding: 1rem;
-    margin: 0.3rem;
-    color: #065a82;
-    background-color: #dcdddb;
-    line-height: 2.5rem;
-    text-align: center;
-    
-}
 
-footer {
-    background-color: #21295C;
-    color: #FDFFFC;
-    text-align: center;
-    margin: 2rem;
-    padding: 2rem;
-}
 
 .heading {
    display: flex;
@@ -94,6 +82,7 @@ footer {
 
 .logo {
     margin-right: 1rem;
+    padding: 1.3rem;
 }
 
 .title {
@@ -129,3 +118,20 @@ footer {
    padding: 1.5rem 0;
 }
 
+article {
+    padding: 1rem;
+    margin: 0.3rem;
+    color: #065a82;
+    background-color: #dcdddb;
+    line-height: 2.5rem;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #21295C;
+    color: #FDFFFC;
+    /* margin: 2rem; */
+    padding: 2rem;
+    line-height: 1.8rem;
+}

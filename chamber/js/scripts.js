@@ -15,8 +15,7 @@ datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 // responsive navigation
 function toggleMenu()  {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getAnimations("hambtn").classList.toggle("open");
+  document.getElementById("primaryNav").classList.toggle("open");
 }
 
 const x = document.getElementById("hambtn")
