@@ -23,8 +23,6 @@ x.onclick = toggleMenu;
 
 
 
-
-
 // footer date/time/last updated
 var date = (new Date().getFullYear());
 document.getElementById("year").innerHTML = date;

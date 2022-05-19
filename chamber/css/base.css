@@ -67,7 +67,9 @@ nav button:hover {
     color: #74a2b8;
 }
 
-
+p {
+    line-height: 1.3rem;
+}
 
 main {
     display: grid;
@@ -126,6 +128,15 @@ article {
     line-height: 2.5rem;
     text-align: center;
     
+}
+
+article h3 {
+    line-height: 1.6rem;
+}
+
+article p {
+    padding: 1rem;
+    text-align: left;
 }
 
 footer {
