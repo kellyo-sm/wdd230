@@ -76,11 +76,28 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
 }   
 
+#banner {
+    display: none;
+    margin: 0 auto;
+    border: 1px solid #21295C;
+    background-color: #21295C;
+    color: #FDFFFC;
+    padding: 1rem;
+    text-align: center;
+    
+}
 
+#close {
+    background-color: #21295C;
+    color: #FDFFFC;
+    float: right;
+}
 
 .heading {
    display: flex;
 }
+
+
 
 .logo {
     margin-right: 1rem;
@@ -120,6 +137,12 @@ main {
    padding: 1.5rem 0;
 }
 
+.hero-img {
+    justify-self: center;
+    position: relative;
+    max-width: max-content;
+}
+
 article {
     padding: 1rem;
     margin: 0.3rem;
@@ -130,14 +153,31 @@ article {
     
 }
 
-article h3 {
+.arthead {
     line-height: 1.6rem;
+
+}
+
+.artimg {
+    padding: 1rem;
 }
 
 article p {
-    padding: 1rem;
     text-align: left;
 }
+
+.artp {
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 1px solid #21295C;
+}
+
+.artinfo {
+    font-size: 0.8rem;
+}
+
+
 
 footer {
     background-color: #21295C;

@@ -13,6 +13,21 @@ datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 
 
+// message showing on Mondays or Tuesdays only
+let d = new Date().getDay();
+const banner = document.getElementById("banner");
+if (d === 1 || d === 2) {
+  banner.style.display = "block";
+} 
+
+const close = document.querySelector("#close");
+
+close.addEventListener("click", () => {
+  banner.style.display = "none";
+});
+
+
+
 // responsive navigation
 function toggleMenu()  {
   document.getElementById("primaryNav").classList.toggle("open");
@@ -20,6 +35,10 @@ function toggleMenu()  {
 
 const x = document.getElementById("hambtn")
 x.onclick = toggleMenu;
+
+
+
+
 
 
 
