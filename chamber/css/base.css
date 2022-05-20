@@ -77,20 +77,21 @@ main {
 }   
 
 #banner {
-    display: none;
+    /* display: none; */
     margin: 0 auto;
     border: 1px solid #21295C;
     background-color: #21295C;
     color: #FDFFFC;
     padding: 1rem;
     text-align: center;
-    
+    opacity: 70%;
 }
 
 #close {
     background-color: #21295C;
     color: #FDFFFC;
     float: right;
+    opacity: 70%;
 }
 
 .heading {
@@ -138,9 +139,8 @@ main {
 }
 
 .hero-img {
-    justify-self: center;
-    position: relative;
-    max-width: max-content;
+    
+    overflow: hidden;
 }
 
 article {
@@ -177,6 +177,11 @@ article p {
     font-size: 0.8rem;
 }
 
+.join {
+    
+    
+}
+
 
 
 footer {
@@ -184,5 +189,5 @@ footer {
     color: #FDFFFC;
     /* margin: 2rem; */
     padding: 2rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
