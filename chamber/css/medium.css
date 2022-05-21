@@ -1,5 +1,13 @@
-@media (min-width: 35rem) {
+@media (min-width: 43rem) {
     nav ul#primaryNav {
-            display: flex;
+        display: flex;
+    }
+
+    #hambtn {
+        display: none;
+    }
+
+        .spotlight-3 {
+            display: grid;
         }
 }

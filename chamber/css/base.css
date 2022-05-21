@@ -11,9 +11,10 @@ body {
 }
 
 header, main, footer {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 header {
@@ -26,6 +27,7 @@ nav {
     grid-column: 3/6;
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 
 nav ul {
@@ -71,10 +73,18 @@ p {
     line-height: 1.3rem;
 }
 
-main {
+/* main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-}   
+}    */
+
+button {
+    padding: 0.75rem;
+    border-radius: 15px;
+    background-color: #065a82;
+    color: #FDFFFC;
+    font-weight: bold;
+}
 
 #banner {
     /* display: none; */
@@ -139,16 +149,29 @@ main {
 }
 
 .hero-img {
+    max-width: 100%;
     
-    overflow: hidden;
 }
 
-article {
+section {
     padding: 1rem;
     margin: 0.3rem;
     color: #065a82;
     background-color: #dcdddb;
     line-height: 2.5rem;
+    text-align: center;
+    
+}
+
+.join-btn {
+    display: none;
+}
+article {
+    padding: 0.5rem;
+    margin: 1px;
+    color: #065a82;
+    background-color: #e9ebe8;
+    line-height: 0.5rem;
     text-align: center;
     
 }
@@ -162,7 +185,8 @@ article {
     padding: 1rem;
 }
 
-article p {
+section p {
+    margin-top: 1rem;
     text-align: left;
 }
 
@@ -177,12 +201,14 @@ article p {
     font-size: 0.8rem;
 }
 
-.join {
-    
+.spotlight {
+    display: flex;
     
 }
 
-
+.spotlight-3 {
+    display: none;
+}
 
 footer {
     background-color: #21295C;
