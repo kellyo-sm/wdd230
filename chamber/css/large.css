@@ -11,8 +11,10 @@ nav ul#primaryNav {
     .hero-img {
         grid-column: 2/4;
         grid-row: 1;
-        width: 100%;
+        width: 98%;
         position: relative;
+        margin-left: 0.3rem;
+        margin-top: 0.3rem;
     }
 
     

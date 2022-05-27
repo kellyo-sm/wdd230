@@ -16,22 +16,25 @@ button.style.borderColor = "#66715f";
 
 button.addEventListener("click", () => {
     const scripture = input.value;
-    input.value = " ";
+    if (scripture.trim() === "") {
+        alert("Empty field.  Please enter text.");
+    } else {
+        input.value = "";
 
-    const listItem = document.createElement("li");
-    const listText = document.createElement("span");
-    const listBtn = document.createElement("button");
+        const listItem = document.createElement("li");
+        const listText = document.createElement("span");
+        const listBtn = document.createElement("button");
 
-    listItem.appendChild(listText);
-    listText.textContent = scripture;
-    listItem.appendChild(listBtn);
-    listBtn.textContent = "\u274C";
-    listBtn.style.fontSize = "1rem";
-    list.appendChild(listItem);
+        listItem.appendChild(listText);
+        listText.textContent = scripture;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = "\u274C";
+        listBtn.style.fontSize = "1rem";
+        list.appendChild(listItem);
 
-    listBtn.addEventListener("click", () => {
-        list.removeChild(listItem);
-    });
-
+        listBtn.addEventListener("click", () => {
+            list.removeChild(listItem);
+        });
+    }
     input.focus();
 })
