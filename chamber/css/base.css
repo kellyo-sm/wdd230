@@ -98,10 +98,12 @@ button {
 }
 
 #close {
-    background-color: #21295C;
+    background-color: transparent;
     color: #FDFFFC;
+    border: none;
     float: right;
     opacity: 70%;
+    
 }
 
 .heading {
@@ -124,7 +126,7 @@ button {
 }
 
 .title-sm {
-    font-size: 1.1rem;
+    
     grid-column: 1/3;
     text-align: left;
 }

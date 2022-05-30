@@ -17,8 +17,6 @@ nav ul#primaryNav {
         margin-top: 0.3rem;
     }
 
-    
-
     .events {
         grid-column: 1;
         grid-row: 1;
@@ -27,6 +25,26 @@ nav ul#primaryNav {
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
+    }
+    
+    .temp-icon {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    #windspeed, #windchill {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    
+
+    .head {
+        border-bottom: 2px solid #21295C;
+        margin-top: 2rem;
     }
 
     .join {

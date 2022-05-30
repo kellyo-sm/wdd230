@@ -22,17 +22,17 @@
     <header>
         
         <div class="heading">
-            <picture><img class="logo" width="150" height="150" src="images/hilltop.png" alt="Burke SD logo"></picture>
+            <picture><img class="logo" src="images/hilltop150webp.webp" alt="Burke SD logo"></picture>
             <div>
                 <h1 class="title">Burke</h1>
-                <h3 class="title-sm">Chamber of Commerce</h3>
+                <h2 class="title-sm">Chamber of Commerce</h2>
             </div>
         </div>
         <nav class="navigation responsive">
             
             <div class="social">
-                <a class="social-media" width="48" height="48" href="https://www.facebook.com/"><img src="images/FacebookIcon.png" alt=""></a>
-                <a class="social-media"  width="48" height="48" href="https://www.indeed.com/"><img src="images/IndeedIcon.png" alt=""></a>
+                <a class="social-media" href="https://www.facebook.com/"><img src="images/FacebookIcon.png" alt=""></a>
+                <a class="social-media" href="https://www.indeed.com/"><img src="images/IndeedIcon.png" alt=""></a>
                 
             </div>
             
@@ -62,15 +62,15 @@
         
         <!-- <h5>Hero Image and Call to Action</h5> -->
         <img class="hero-img" src="heavy-image/wdd230-org.jpg" alt="heavy image practice" 
-        srcset="heavy-image/heav-img200.jpg 200w,
-        heavy-image/heavy-img500.jpg 500w,
+        srcset="heavy-image/heavy-img300.jpg 300w,
+        heavy-image/heavy-img600.jpg 600w,
         heavy-image/heavy-img800.jpg 800w," >
        
         <button class="join-btn" a href="#">Join the Chamber!</button>
         <section class="events">
             <h5>Events</h5>
             <h3>Public Invited to Armed Forces Ceremony</h3>
-            <p>The Military & Veterans Affairs Committee is hosting the annual Armed Forces Day program on Saturday, 21 May.  The program will be held at the Civic Center at 10 am.  There will be a potluck to follow.  The Ladies of Burke will be serving.</p>
+            <p>The Military & Veterans Affairs Committee is hosting the annual Armed Forces Day program on Saturday, 28 May.  The program will be held at the Civic Center at 10 am.  There will be a potluck to follow.  The Ladies of Burke will be serving.</p>
         </section>
         <section class="news">
             <h5>News</h5>
@@ -80,10 +80,27 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi, consequatur, reprehenderit quos provident libero pariatur sapiente, nobis iure eos porro? Nesciunt doloribus odit veniam quaerat? Aliquam odio animi cumque.</p>
         </section>
         <section class="weather">
-            <h3>Weather</h3>
-            <img src="" alt="">
-            <h2></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quae vel, ex consectetur eaque et provident alias, obcaecati voluptates, pariatur autem quibusdam rerum quidem harum. Ratione quos voluptate beatae nostrum.</p>
+            <h2>Weather</h2>
+            <div class="temp-icon">
+                <img class="weather-icon" src="images/partly-cloudy.png" alt="partly-cloudy">
+                <p><span id="temp">61</span>&#8457;</p>
+            </div>
+            <h2 class="head">Partly Cloudy</h2>
+            <div id="windspeed">
+                <p>Wind Speed:  </p>
+                <p>
+                    <span id="speed">15</span>
+                    m/h
+                </p>
+            </div>
+            <div id="windchill">
+                <p>Wind Chill:  </p>
+                <p>
+                    <span id="chill"></span>
+                </p>
+
+            </div>
+
 
         </section>
         <section class="join">
@@ -123,6 +140,7 @@
         <p>&copy;<span id="year"></span> Burke SD Chamber of Commerce | <strong>Kelly'O Smith</strong> | WDD 230 Project | <span id="currentdate"></span></p>
         
         <script src="js/scripts.js"></script>
+        <script src="js/windchill.js"></script>
     </footer>
     
 </body>
