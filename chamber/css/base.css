@@ -21,6 +21,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
     /* padding: 2rem; */
+    
 } 
 
 nav {
@@ -101,9 +102,9 @@ button {
     background-color: transparent;
     color: #FDFFFC;
     border: none;
-    float: right;
+    /* float: right; */
     opacity: 70%;
-    
+    margin-left: 8rem;
 }
 
 .heading {
