@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header, footer {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 1.2rem;
+    background-color: rgb(230, 215, 250);
+    text-align: center;
+    padding: 2rem;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+picture {
+    margin-bottom: 2rem;
+}
+
+img[data-src] {
+    filter: blur(0.5rem);
+}
+
+img {
+    background-color: rgb(230, 215, 250);
+    filter: blur(0rem);
+    transition: 5s;
+}
+
+
+footer {
+    background-color: rgb(230, 215, 250);
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
