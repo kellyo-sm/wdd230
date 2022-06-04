@@ -1,15 +1,10 @@
-const windSpeed = parseFloat(document.getElementById("speed").textContent);
-const temperature = parseFloat(document.getElementById("temp").textContent);
+const temp = parseFloat(document.querySelector("#temp").innerHTML);
+const wind = parseFloat(document.querySelector("#speed").innerHTML);
+const windchill = document.querySelector("#chill");
 
-let tempFahrenheit = (temperature * 1.8) + 32;
-let speedMph = windSpeed / 1.609344;
-
-let windChill = 0;
-if (tempFahrenheit <= 50 && speedMph > 3.0) {
-    let f = 35.74 + (0.6215 * tempFahrenheit) - (35.73 * (speedMph ** 0.16)) + (0.4275 * (tempFahrenheit * (speedMph ** 0.16)));
-    windChill = f;
+if ((temp <= 50) && (wind > 3)) {
+  const wc = 35.74 + (0.6215 * temp) - (35.775 * Math.pow(wind, 0.16)) + (0.4275 * temp * Math.pow(wind, 0.16));
+  windchill.innerHTML = wc.toFixed(1) + "°F";
 } else {
-    windChill = "N/A";
+  windchill.innerHTML = "N/A"
 }
-
-document.getElementById("chill").textContent = windChill;
