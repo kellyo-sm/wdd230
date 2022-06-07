@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --back: #B09e99;
+    --back2: #e5dddc;
+    --foredark: #6b4b3e;
+    --forelight: #f8f4f2;
+    --border: #231c1b;
+    --borderlight: #Af9a97;
+    --shadow: hsl(0,0%,50%);
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+table {
+    margin: 40px auto;
+    border: thin solid var(--border);
+    box-shadow: 6px 9px 12px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 0.75rem;
+    background-color: var(--foredark);
+    color: var(--forelight);
+    box-shadow: 6px 9px 12px var(--shadow);
+}
+
+tr:first-child th {
+    background-color: var(--foredark);
+    color: var(--forelight);
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--back);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--forelight);
+}
