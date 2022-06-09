@@ -48,6 +48,11 @@ th, td {
     border: 1px solid var(--border);
 }
 
+th, td:hover {
+    background-color: var(--foredark);
+    color: var(--forelight);
+}
+
 th {
     background-color: var(--back);
 }
