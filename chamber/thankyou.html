@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burke Chamber Home</title>
+    <meta name="description"
+        content="Burke SD Chamber of Commerce for Kelly'O Smith assignment in WDD230: Web Frontend Development at BYU-Idaho">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=My+Soul&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Water+Brush&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.<button
+            id="close">X</button></div>
+    <br>
+    <header>
+
+        <div class="heading">
+            <picture><img class="logo" src="images/hilltop150webp.webp" alt="Burke SD logo"></picture>
+            <div>
+                <h1 class="title">Burke</h1>
+                <h2 class="title-sm">Chamber of Commerce</h2>
+            </div>
+        </div>
+        <nav class="navigation responsive">
+
+            <div class="social">
+                <a class="social-media" href="https://www.facebook.com/"><img src="images/FacebookIcon.png" alt=""></a>
+                <a class="social-media" href="https://www.indeed.com/"><img src="images/IndeedIcon.png" alt=""></a>
+
+            </div>
+
+
+            <button id="hambtn"><span>&#9776;</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+
+            </ul>
+
+
+
+        </nav>
+        <br>
+        <div class="term">
+            <div class="date"></div>
+            <aside></aside>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="thankyou">
+            <h2>Thank you for joining!</h2>  
+            <p class="thanks"> You will receive an email notification within the next 10 minutes.  </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Burke SD Chamber of Commerce | <strong>Kelly'O Smith</strong> | WDD 230 Project
+            | <span id="currentdate"></span></p>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/windchill.js"></script>
+    </footer>
+
+</body>
+
+</html>

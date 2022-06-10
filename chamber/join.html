@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burke Chamber Home</title>
+    <title>Burke Chamber Join</title>
     <meta name="description"
-        content="Burke SD Chamber of Commerce for Kelly'O Smith assignment in WDD230: Web Frontend Development at BYU-Idaho">
+        content="Burke SD Chamber of Commerce Join Us for Kelly'O Smith assignment in WDD230: Web Frontend Development at BYU-Idaho">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,13 +64,92 @@
 
     <main>
 
-<div>
-    <section></section>
-</div>
+        <div>
+            <section class="application">
+                <div id="jointitle">
+                    <h1>Burke SD Chamber Application Form</h1>
+                </div>
+                <div id="joinapp">
+                    <form action="thankyou.html" method="get" name="myForm">
+                    <fieldset>
+                        <legend>Name and Contact</legend>
+                        <label class="top">
+                            First Name <input type="text" name="fname" placeholder="required" required>
+                        </label>
+                        <label class="top">Last Name <input type="text" name="lname" placeholder="required" required></label>
+                        <label class="top">Email <input type="text" name="email" placeholder="email@email.com" required></label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Business Type and Position</legend>
+                        <label class="top">Business Name  <input type="text" name="busName" placeholder="required" required></label>
+                        <label class="top">Business Title 
+                            <p id="busTitleWarn">(Minimum of 7 characters - includes letters, spaces, hyphens)</p> <input type="text" pattern="[a-zA-Z\s\-]{7,}" name="busTitle" placeholder="required">
+                        </label>
+                        <label class="top">Business Description</label>
+                        <textarea name="textarea" id="content" cols="40" rows="10"></textarea>
+                        <!-- hidden field that contains the current date and time that the form was submitted -->
+                        <input type="hidden" id="date" name="date" value="CurrentDate">
+                        <input type="hidden" id="time" name="time" value="CurrentTime">
+
+                    </fieldset>
+
+                    <fieldset class="tiers">
+                        <legend>Membership Tiers</legend>
+                        <label class="sbs"><input type="radio" name="NP">NP (Non-Profit) Membership</label>
+                        <label class="sbs"><input type="radio" name="Bronze">Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="Silver">Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="gold">Gold Membership</label>
+                    </fieldset>
+
+                    <input type="submit" value="Join the Chamber Today!" name="button" class="submit-btn">
+
+                    </form>
+                </div>
+            </section>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3" scope="colgroup" id="table-head">Join the Chamber Today! Extend Your Reach!</th>
+                    </tr>
+                    <tr id="table-col-head">
+                        <th scope="col" id="tier">Membership Tier</th>
+                        <th scope="col" id="benefit">Benefit</th>
+                        <th scope="col" id="cost">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NP</td>
+                        <td>For NonProfit Organizations</td>
+                        <td>No Fee</td>
+                    </tr>
+                    <tr>
+                        <td>Bronze</td>
+                        <td><a href="files/bronze.pdf">Basic package benefits</a><br>
+                            Participate on Committees from all employees....  </td>
+                        <td>$375</td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td><a href="files/silver.pdf">Silver benefits</a> Has all the benefits of the Bronze package plus... <br>All employees hold membership status, plus...  </td>
+                        <td>$675</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td><a href="files/Gold.pdf">Gold benefits</a> Has all the benefits of Bronze and Silver plus... <br>Five complimentary tickets to Bysiness After Hours, plus...</td>
+                        <td>$1,250</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
         
     </main>
 
-    <footer>
+    <footer id="join-footer">
         <p>&copy;<span id="year"></span> Burke SD Chamber of Commerce | <strong>Kelly'O Smith</strong> | WDD 230 Project
             | <span id="currentdate"></span></p>
 

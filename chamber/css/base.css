@@ -241,7 +241,107 @@ section p {
 .spotlight-3 {
     display: none;
 }
+/* 
+join form
+*/
 
+.application {
+    box-shadow: 6px 9px 12px #000;
+}
+
+form input.submit-btn {
+    padding: 0.75rem;
+    border-radius: 15px;
+    background-color: #065a82;
+    color: #FDFFFC;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+fieldset label.top {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#busTitleWarn {
+    font-size: 0.7rem;
+    line-height: 0.2rem;
+}
+
+fieldset label.sbs {
+    display: block;
+    text-align: left;
+}
+
+
+.sbs {
+    line-height: 1.3rem;
+}
+
+
+.thankyou {
+    padding: 10% 0;
+}
+
+.thanks {
+    text-align: center;
+}
+
+/*
+Table
+ */
+
+table {
+    margin: 40px auto;
+    /* border: thin solid #065a82; */
+    box-shadow: 6px 9px 12px #000;
+    border-collapse: collapse;
+    padding: 3rem;
+    background-color: #dcdddb;
+}
+
+thead {
+    background-color: #21295C;
+    color: #dcdddb;
+    font-style: italic;
+}
+
+#table-head {
+    font-size: 1.4rem;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+
+#table-col-head, th {
+    font-size: 1.2rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+tbody tr td {
+    padding: 1.4rem;
+    /* border-bottom: thin solid #065a82; */
+}
+
+tr td:first-child {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+td:hover {
+    background-color: #74a2b8;
+    color: #dcdddb;
+}
+
+/* footer */
 
 footer {
     background-color: #21295C;

@@ -64,11 +64,31 @@
         grid-column: 2/4;
     }
 
-    
-
     .spotlight {
         grid-column: 4/5;
         grid-row: 1/4;
         display: grid;
     }
+    /* join page */
+
+    .application {
+        max-width: 50%;
+        grid-column: 1;
+        position: absolute;
+        
+    }
+
+    table {
+        max-width: 46%;
+        float: right;
+        display: block;
+        grid-row: 1;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    #join-footer {
+    margin-top: 6rem;
 }
+}
+
