@@ -1,0 +1,74 @@
+* {
+    font-family: 'Charis SIL', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    text-align: center;
+    color: rgb(73, 45, 54);
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0px 10px 5px -2px rgb(204, 203, 203);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    padding-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+img {
+    width: 55%;
+    display: block;
+    margin: 10px auto 5px;
+    box-shadow: 2px 6px 11px rgb(92, 92, 92);
+}
+
+main {
+    
+    margin:3rem auto;
+    background-color: rgb(235, 235, 235);
+    max-width: 1300px;
+}
+
+section {
+    background: linear-gradient(0.50turn, rgb(196, 180, 184), rgb(184, 178, 199));
+    border: 5px double rgb(36, 9, 22);
+    padding-bottom: 1rem;
+    
+}
+
+.cards {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+    gap: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
