@@ -1,0 +1,74 @@
+{"directory": [
+    {
+        "businessName": "Rosie's",
+        "address": "1259 Main Street",
+        "phone": "999-999-9999",
+        "url": "rosiesgreenhouse.com",
+        "icon": "flower_in_vase.png",
+        "membershipLevel": "Gold"
+    },
+    {
+        "businessName": "The Castle",
+        "address": "589 Main Street",
+        "phone": "999-999-9999",
+        "url": "thecastle.com",
+        "icon": "",
+        "membershipLevel": "Gold"
+    },
+    {
+        "businessName": "Fitness on Main",
+        "address": "",
+        "phone": "",
+        "url": "fitmain.com",
+        "icon": "",
+        "membershipLevel": "Gold"
+    },
+    {
+        "businessName": "Calamity Jane's",
+        "address": "572 Main street",
+        "phone": "999-999-9999",
+        "url": "thecalamityjanerestaurant.com",
+        "icon": "",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "businessName": "Stella's",
+        "address": "813 Main Street",
+        "phone": "605-775-1275",
+        "url": "",
+        "icon": "",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "businessName": "Missouri Valley Insurance",
+        "address": "1102 Main Street",
+        "phone": "605-775-2636",
+        "url": "mvmic.com",
+        "icon": "",
+        "membershipLevel": "Gold"
+    },
+    {
+        "businessName": "Vic Schmidtz PC",
+        "address": "738 Main Street",
+        "phone": "605-775-2435",
+        "url": "vicschmidtzpc.com",
+        "icon": "",
+        "membershipLevel": "Gold"
+    },
+    {
+        "businessName": "New Image Auto Tech",
+        "address": "Highway 18",
+        "phone": "605-775-2325",
+        "url": "newimageautotech.com",
+        "icon": "",
+        "membershipLevel": "Silver"
+    },
+    {
+        "businessName": "Purvis Electric",
+        "address": "North Highway 18",
+        "phone": "605-775-2555",
+        "url": "purviselectric.com",
+        "icon": "",
+        "membershipLevel": "Silver"
+    }
+]}
