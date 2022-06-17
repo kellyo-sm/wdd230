@@ -1,4 +1,4 @@
-const requestURL = "https://github.com/kellyo-sm/wdd230/blob/main/chamber/json/data.json";
+const requestURL = "https://raw.githubusercontent.com/kellyo-sm/wdd230/main/chamber/json/data.json";
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)
