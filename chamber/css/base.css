@@ -341,6 +341,28 @@ td:hover {
     color: #dcdddb;
 }
 
+/* directory */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 12px;
+    
+}
+
+.cards h1 {
+    font-size: 1.5rem;
+}
+
+.cards p {
+    text-align: center;
+}
+
+.cards section {
+    background: linear-gradient(0.50turn, rgb(233, 233, 233), rgb(160, 160, 160));
+    border: 5px double #065a82;
+}
+
 /* footer */
 
 footer {
