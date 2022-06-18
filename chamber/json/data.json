@@ -28,7 +28,7 @@
         "address": "572 Main street",
         "phone": "999-999-9999",
         "url": "thecalamityjanerestaurant.com",
-        "logo": "",
+        "logo": "./images/CalamityJanes.png",
         "membershipLevel": "Bronze"
     },
     {
@@ -36,7 +36,7 @@
         "address": "813 Main Street",
         "phone": "605-775-1275",
         "url": "",
-        "logo": "",
+        "logo": "./images/stellas.png",
         "membershipLevel": "Bronze"
     },
     {
@@ -44,7 +44,7 @@
         "address": "1102 Main Street",
         "phone": "605-775-2636",
         "url": "mvmic.com",
-        "logo": "",
+        "logo": "./images/Insurance.png",
         "membershipLevel": "Gold"
     },
     {
@@ -52,7 +52,7 @@
         "address": "738 Main Street",
         "phone": "605-775-2435",
         "url": "vicschmidtzpc.com",
-        "logo": "",
+        "logo": "./images/taxes.png",
         "membershipLevel": "Gold"
     },
     {
@@ -60,7 +60,7 @@
         "address": "Highway 18",
         "phone": "605-775-2325",
         "url": "newimageautotech.com",
-        "logo": "",
+        "logo": "./images/NewImage.png",
         "membershipLevel": "Silver"
     },
     {
@@ -68,7 +68,7 @@
         "address": "North Highway 18",
         "phone": "605-775-2555",
         "url": "purviselectric.com",
-        "logo": "",
+        "logo": "./images/PurvisElectric.png",
         "membershipLevel": "Silver"
     }
 ]}
