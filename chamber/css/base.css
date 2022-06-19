@@ -363,6 +363,11 @@ td:hover {
     border: 5px double #065a82;
 }
 
+.cards img {
+    width: 150px;
+    height: 150px;
+}
+
 /* footer */
 
 footer {
