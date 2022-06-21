@@ -72,7 +72,7 @@
     /* join page */
 
     .application {
-        max-width: 50%;
+        max-width: 75%;
         grid-column: 1;
         position: absolute;
         
@@ -87,8 +87,14 @@
         margin-top: 5px;
     }
 
+
+
     #join-footer {
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
+
+    #content {
+       justify-items:left ;
+    }
 }
 

@@ -10,4 +10,11 @@
         .spotlight-3 {
             display: grid;
         }
+
+
+    .application {
+        box-shadow: 6px 9px 12px #000;
+        width: 35rem;
+    
+    }
 }

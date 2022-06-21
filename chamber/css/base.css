@@ -245,8 +245,20 @@ section p {
 join form
 */
 
+#joinapp {
+    justify-content: center;
+}
+
 .application {
     box-shadow: 6px 9px 12px #000;
+    /* max-width: 30rem; */
+    display: block;
+}
+
+input {
+    display: block;
+    margin: auto;
+    
 }
 
 form input.submit-btn {
@@ -255,7 +267,9 @@ form input.submit-btn {
     background-color: #065a82;
     color: #FDFFFC;
     font-weight: bold;
-    margin: 1rem;
+    margin: 1rem auto;
+    
+    
 }
 
 fieldset legend {
@@ -265,24 +279,26 @@ fieldset legend {
 
 fieldset label.top {
     display: block;
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     font-weight: bold;
+    line-height: 2rem;
 }
 
 #busTitleWarn {
     font-size: 0.7rem;
     line-height: 0.2rem;
+    margin: 0.1rem auto 0.6rem auto;
+    text-align: center;
 }
 
 fieldset label.sbs {
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-
 .sbs {
-    line-height: 1.3rem;
+    line-height: 1.6rem;
 }
 
 
