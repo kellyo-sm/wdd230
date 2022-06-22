@@ -6,10 +6,10 @@ const wind = document.querySelector("#speed");
 const windchill = document.querySelector("#chill");
 const captionDesc = document.querySelector('figcaption');
 
-const lat = 43.182
-const long = -99.292
+const latitude = 43.182
+const longitude = -99.292
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=4c30c204135027cef9944117fb3a6fbc';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=4c30c204135027cef9944117fb3a6fbc';
 
 apiFetch(url);
 
@@ -31,20 +31,20 @@ async function apiFetch(apiURL) {
 }
 
 function displayResults(weatherData) {
-  const tem = weatherData.main.temp.toFixed(0);
-  const sp = weatherData.main.wind.speed;
+  const t = weatherData.main.temp.toFixed(0);
+  const s = weatherData.main.wind.speed;
 
 
-  if ((tem <= 50) && (sp >= 3)) {
-    const wc = 35.74 + (0.6215 * tem) - (35.775 * Math.pow(sp, 0.16)) + (0.4275 * tem * Math.pow(sp, 0.16));
-    windchill.textContent = wc.toFixed(1) + "°F";
+  if ((t <= 50) && (s >= 3)) {
+    const f = 35.74 + (0.6215 * t) - (35.775 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
+    windchill.textContent = f.toFixed(1) + "°F";
   } 
   // else {
   //   windchill.innerHTML = "N/A"
   // }
 
-  temp.innerHTML = `<strong>${tem}</strong>`;
-  wind.innerHTML = sp;
+  temp.innerHTML = `<strong>${t}</strong>`;
+  wind.innerHTML = s;
 
   const iconsrc = `https://openweathermap.or/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
