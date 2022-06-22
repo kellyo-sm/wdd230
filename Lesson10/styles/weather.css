@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Charis SIL', serif;
+}
+
+body {
+    max-width: 625px;
+    margin: 5rem auto;
+    text-align: center;
+    
+}
+
+div {
+    background-color: rgb(240, 248, 243);
+}
+
+h1 {
+    font-family: 'Fascinate', cursive;
+    background-color: rgb(223, 231, 226);
+}
+
+div, p {
+    margin: 1.3rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    background-color: rgb(223, 231, 226);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer {
+    margin: 2rem auto;
+    background-color: rgb(223, 231, 226);
+}
