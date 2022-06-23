@@ -9,7 +9,7 @@ const captionDesc = document.querySelector('figcaption');
 const latitude = 43.182
 const longitude = -99.292
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=4c30c204135027cef9944117fb3a6fbc';
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=4c30c204135027cef9944117fb3a6fbc`;
 
 apiFetch(url);
 
@@ -17,11 +17,10 @@ apiFetch(url);
 async function apiFetch(apiURL) {
   try {
     const response = await fetch(apiURL);
-    if (Response.ok) {
+    if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing call
+      // console.log(data); // testing call
       displayResults(data);
-
     } else {
       throw Error(await response.text());
     }
@@ -32,7 +31,7 @@ async function apiFetch(apiURL) {
 
 function displayResults(weatherData) {
   const t = weatherData.main.temp.toFixed(0);
-  const s = weatherData.main.wind.speed;
+  const s = weatherData.main.wind.wind;
 
 
   if ((t <= 50) && (s >= 3)) {
