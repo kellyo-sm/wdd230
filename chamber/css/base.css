@@ -359,29 +359,51 @@ td:hover {
 
 /* directory */
 
-.cards {
+.gridListbtn button{
+    cursor: pointer;
+}
+
+.grids {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 12px;
-    
 }
 
-.cards h1 {
+.grids h1 {
     font-size: 1.5rem;
 }
 
-.cards p {
+.grids p {
     text-align: center;
 }
 
-.cards section {
+.grids section {
     background: linear-gradient(0.50turn, rgb(233, 233, 233), rgb(160, 160, 160));
     border: 5px double #065a82;
 }
 
-.cards img {
+.grids img {
     max-width: 100px;
     max-height: 100px;
+}
+
+/* list */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cards > * {
+    margin: 0 1rem;
+    text-align: left;
+}
+
+.cards section {
+    flex-direction: row;
+    justify-content: left;
 }
 
 /* footer */

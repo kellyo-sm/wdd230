@@ -17,4 +17,8 @@
         width: 35rem;
     
     }
+
+    .list img {
+        display: block;
+    }
 }
