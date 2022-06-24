@@ -67,13 +67,11 @@ const listbutton = document.querySelector("#list");
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+	cards.classList.add("grids");
+	cards.classList.remove("lists");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
+listbutton.addEventListener("click", () => {
+	cards.classList.add("lists");
+	cards.classList.remove("grids");
+});
