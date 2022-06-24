@@ -87,7 +87,9 @@
         margin-top: 5px;
     }
 
-
+    .lists h1 {
+            font-size: 1.5rem;
+    }
 
     #join-footer {
     margin-top: 7rem;
