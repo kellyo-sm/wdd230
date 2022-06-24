@@ -429,25 +429,28 @@ td:hover {
 
 }
 
+.lists h1 {
+    font-size: 1.2rem;
+}
+
 .lists img {
     display: none;
 }
 
-.lists h1 {
-    font-size: 1.2rem;
-}
+
+
+.lists p {
+    display: block;
+} 
 
 .lists section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background: linear-gradient(0.50turn, rgb(233, 233, 233), rgb(160, 160, 160));
-        border: 5px double #065a82;
+    border: 5px double #065a82;
 }
 
-.lists p {
-    display: block;
-}
 
 /* footer */
 
