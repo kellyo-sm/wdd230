@@ -14,8 +14,10 @@
 
     .application {
         box-shadow: 6px 9px 12px #000;
-        width: 35rem;
-    
+        max-width: 85%;
+    }
+    table {
+        max-width: 85%
     }
 
     .list img {

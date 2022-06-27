@@ -72,9 +72,9 @@
     /* join page */
 
     .application {
-        max-width: 75%;
+        max-width: 45%;
         grid-column: 1;
-        position: absolute;
+        margin: 2rem 0;
         
     }
 
@@ -83,7 +83,7 @@
         float: right;
         display: block;
         grid-row: 1;
-        position: relative;
+        /* position: relative; */
         margin-top: 5px;
     }
 
@@ -91,9 +91,9 @@
             font-size: 1.5rem;
     }
 
-    #join-footer {
+    /* #join-footer {
     margin-top: 7rem;
-}
+} */
 
     #content {
        justify-items:left ;
