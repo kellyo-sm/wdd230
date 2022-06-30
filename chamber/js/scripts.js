@@ -48,17 +48,17 @@ x.onclick = toggleMenu;
 
 
 
-// footer date/time/last updated
-var date = (new Date().getFullYear());
-document.getElementById("year").innerHTML = date;
+// // footer date/time/last updated
+// var date = (new Date().getFullYear());
+// document.getElementById("year").innerHTML = date;
 
 
-var currentdate = new Date().toLocaleDateString('en-GB', {weekday:"long", year:"numeric", month:"long", day:"numeric"});
-document.getElementById("currentdate").innerHTML = currentdate;
-document.currentdate.style.fontSize = "0.7em";
+// var currentdate = new Date().toLocaleDateString('en-GB', {weekday:"long", year:"numeric", month:"long", day:"numeric"});
+// document.getElementById("currentdate").innerHTML = currentdate;
 
 
-document.write("Last Modified: " + document.lastModified);
+
+// document.write("Last Modified: " + document.lastModified);
 
 
 

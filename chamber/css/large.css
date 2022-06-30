@@ -5,10 +5,16 @@
             display: flex;
         }
 
+    .responsive {
+        display: grid;
+        margin-bottom: 1rem;
+    }
+
     main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
     }
+
 
 
     .discoverMain {
