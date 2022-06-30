@@ -42,7 +42,7 @@ function displayBusiness(business) {
         business.website = "https://kellyo-sm.github.io/wdd230/chamber/404.html";
     // };
 
-    website.setAttribute('href', business.website);
+    website.setAttribute('href', `${business.website}`);
     website.classList.add("bWeb");
 
     card.appendChild(img);
