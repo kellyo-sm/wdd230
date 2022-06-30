@@ -37,8 +37,9 @@ function displayBusiness(business) {
     website.textContent = business.url;
     membership.textContent = business.membershipLevel;
 
-    if(business.website === "N/A") {
-        business.website = "https://www.mcdonalds.com/us/en-us.html";
+    if(business.website == "N/A") {
+        // business.website = "https://www.mcdonalds.com/us/en-us.html";
+        business.website = "https://kellyo-sm.github.io/wdd230/chamber/404.html";
     };
 
     website.setAttribute('href', business.website);
