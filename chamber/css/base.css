@@ -465,6 +465,26 @@ td:hover {
 }
 
 
+/* Error page */
+
+#malfunction {
+    font-size: 8rem;
+    line-height: 2rem;
+}
+
+#errorExplain {
+    margin: 4rem auto 2rem auto;
+}
+
+#errorp {
+    margin-bottom: 3rem;
+}
+
+#errorbtn {
+    margin-bottom: 5rem;
+    
+}
+
 /* footer */
 
 footer {
@@ -514,3 +534,4 @@ footer {
 #modified {
     font-size: 0.7rem;
 }
+

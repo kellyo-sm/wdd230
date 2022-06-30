@@ -35,7 +35,7 @@
         "businessName": "Stella's",
         "address": "813 Main Street",
         "phone": "605-775-1275",
-        "url": "",
+        "url": "https://stellasinburke.com/",
         "logo": "./images/stellas.png",
         "membershipLevel": "Bronze"
     },
@@ -43,7 +43,7 @@
         "businessName": "Missouri Valley Insurance",
         "address": "1102 Main Street",
         "phone": "605-775-2636",
-        "url": "mvmic.com",
+        "url": "N/A",
         "logo": "./images/Insurance.png",
         "membershipLevel": "Gold"
     },
