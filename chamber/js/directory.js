@@ -39,6 +39,7 @@ function displayBusiness(business) {
 
     if(business.website == "N/A") {
         business.website = "https://www.mcdonalds.com/us/en-us.html";
+        
     };
 
     website.setAttribute('href', business.website);
