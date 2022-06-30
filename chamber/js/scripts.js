@@ -55,9 +55,12 @@ document.getElementById("year").innerHTML = date;
 
 var currentdate = new Date().toLocaleDateString('en-GB', {weekday:"long", year:"numeric", month:"long", day:"numeric"});
 document.getElementById("currentdate").innerHTML = currentdate;
+document.currentdate.style.fontSize = "0.7em";
 
 
 document.write("Last Modified: " + document.lastModified);
+
+
 
 // hidden date and time
 

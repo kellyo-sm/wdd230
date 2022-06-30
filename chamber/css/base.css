@@ -146,7 +146,7 @@ button {
 .term {
    grid-column: 1/6; 
    text-align: center;
-   background-color: #21295C;
+   background-color: #065a82;
    color: #FDFFFC;
    padding: 1.5rem 0;
 }
@@ -157,7 +157,7 @@ img[data-src] {
 
 img {
     filter: blur(0rem);
-    transition: 5s;
+    transition: 2s;
 }
 
 .container img:hover {
@@ -459,10 +459,49 @@ td:hover {
 /* footer */
 
 footer {
-    background-color: #21295C;
+    background-color: #065a82;
     color: #FDFFFC;
     /* margin: 2rem; */
-    padding: 2rem;
+    padding: 1rem;
     line-height: 2rem;
     
+}
+
+
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.fimg {
+   /* margin-right: 20rem; */
+   grid-column: 1;
+   grid-row: 1;
+   margin: 0;
+   
+   
+}
+.faddress {
+    grid-column: 3;
+    margin: auto 0;
+}
+
+
+.fEmail {
+    grid-column: 5;
+    margin: auto 5rem auto 0;
+}
+
+
+.classDetails {
+    font-size: 0.7rem;
+    grid-column: 1/6;
+    justify-content: center;
+    margin-top: 0;
+    
+}
+
+#modified {
+    font-size: 0.7rem;
 }
