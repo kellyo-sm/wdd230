@@ -34,5 +34,16 @@
         display: block;
     }
 
+    .faddress {
+    grid-column: 3;
+    
+    }
+
+
+    .fEmail {
+        grid-column: 5;
+        
+    }
+
     
 }

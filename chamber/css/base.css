@@ -493,7 +493,8 @@ footer {
     /* margin: 2rem; */
     padding: 1rem;
     line-height: 2rem;
-    
+    display: block;
+    font-size: 0.7rem;
 }
 
 
@@ -512,14 +513,16 @@ footer {
    
 }
 .faddress {
-    grid-column: 3;
+    grid-column: 2/3;
     margin: auto 0;
+    margin-left: 2rem;
 }
 
 
 .fEmail {
-    grid-column: 5;
+    grid-column: 4;
     margin: auto 5rem auto 0;
+    margin-left: 2rem;
 }
 
 
