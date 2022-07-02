@@ -36,7 +36,7 @@ function displayBusiness(business) {
 
         } else {
 
-            lTwo.innerHTML = `${business.phone} | <a href="${business.url}"target="_blank">Website</a>`;
+            lTwo.innerHTML = `${business.phone} | <a href="${business.url}" target="_blank">Website</a>`;
         };
 
         

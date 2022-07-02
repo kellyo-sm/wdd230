@@ -427,6 +427,10 @@ td:hover {
     box-shadow: 5px 10px;
 }
 
+.cards a {
+    text-decoration: none;
+}
+
 .grids {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

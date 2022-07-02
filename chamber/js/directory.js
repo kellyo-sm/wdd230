@@ -19,6 +19,9 @@ function displayBusiness(business) {
     let pNum = document.createElement("p");
     let Addr = document.createElement("p");
     let website = document.createElement("a");
+    website.href = business.website;
+    website.target = "_blank";
+    website.innerHTML = `<p>${business.website}</p>`;
     let membership = document.createElement("p");
 
 
@@ -37,10 +40,9 @@ function displayBusiness(business) {
     website.textContent = business.url;
     membership.textContent = business.membershipLevel;
 
-    if(business.website == "N/A") {
-        // business.website = "https://www.mcdonalds.com/us/en-us.html";
-        business.url = "https://kellyo-sm.github.io/wdd230/chamber/404.html";
-    };
+    // if(business.url == "N/A") {
+    business.href = "https://kellyo-sm.github.io/wdd230/chamber/404.html";
+    // };
 
     website.setAttribute('href', `${business.url}`);
     website.classList.add("bWeb");
