@@ -30,13 +30,13 @@ function displayBusiness(business) {
 
         lOne.textContent = business.address;
 
-        if(business.website == "N/A") {
+        if(business.url == "N/A") {
 
-            lTwo.innerHTML = `${business.phone} | <strong>No Website</strong>`;
+            lTwo.innerHTML = `${business.phone}`;
 
         } else {
 
-            lTwo.innerHTML = `${business.phone} | <a href="${business.website} target="_blank">Website</a>`;
+            lTwo.innerHTML = `${business.phone} | <a href="${business.url}"target="_blank">Website</a>`;
         };
 
         

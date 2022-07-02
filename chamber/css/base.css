@@ -241,7 +241,13 @@ section p {
 
 .spotlight p {
     text-align: center;
+    
 }
+
+.spotlight a {
+    text-decoration: none;
+}
+
 
 .temp-icon {
     display: flex;
