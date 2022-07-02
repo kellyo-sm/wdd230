@@ -36,7 +36,7 @@ function displayBusiness(business) {
 
         } else {
 
-            lTwo.innerHTML = `${business.phone} | <a href="${business.website = "https://kellyo-sm.github.io/wdd230/chamber/404.html"}  target="_blank">Website</a>`;
+            lTwo.innerHTML = `${business.phone} | <a href="${business.website} target="_blank">Website</a>`;
         };
 
         
