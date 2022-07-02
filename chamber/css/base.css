@@ -487,6 +487,51 @@ td:hover {
     
 }
 
+/* contact page */
+
+.contact-form {
+    background-color: rgb(233, 233, 233);
+    max-width: 45%;
+    margin: 5rem 4rem 3rem 6rem;
+    padding: 3rem;
+    line-height: 2rem;
+    box-shadow: 5px 4px 7px rgb(131, 131, 131);
+    text-align: left;
+    /* position: absolute; */
+}
+
+.ccon {
+    font-size: 4rem;
+    padding: 3rem 0;
+    border-top: 7px double #21295C;
+}
+
+.ctitle {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.cphone {
+    padding-bottom: 1rem;
+    border-bottom: 7px double #21295C;
+}
+
+.contact-img {
+    margin: -25rem 2rem 0 0;
+    float: right;
+    background-color: #e9ebe8;
+    border: 8px solid #e9ebe8;
+    box-shadow: 5px 4px 7px rgb(131, 131, 131);
+}
+
+.inquire {
+    max-width: 50%;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    justify-self: center;
+    line-height: 5rem;
+}
+
 /* footer */
 
 footer {
