@@ -13,10 +13,10 @@ fetch(requestURL)
 
 function displayBusiness(business) {
     if (business.membershipLevel == "Gold") {
-        let card = document.createElement("div");
+        let card = document.createElement("section");
         let name = document.createElement("h1");
         let img = document.createElement("img");
-        let footer = document.createElement('section');
+        let footer = document.createElement('div');
         let lOne = document.createElement('p');
         let lTwo = document.createElement('p');
 
