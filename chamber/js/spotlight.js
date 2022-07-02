@@ -12,7 +12,7 @@ fetch(requestURL)
     });
 
 function displayBusiness(business) {
-    if (business.membership == "gold") {
+    if (business.membershipLevel == "Gold") {
         let card = document.createElement("div");
         let name = document.createElement("h1");
         let img = document.createElement("img");
@@ -22,21 +22,21 @@ function displayBusiness(business) {
 
         console.log(business)
 
-        name.textContent = business.name;
+        name.textContent = business.businessName;
 
-        img.setAttribute('src', business.imageurl);
-        img.setAttribute('alt', `${business.name} Logo`);
+        img.setAttribute('src', business.logo);
+        img.setAttribute('alt', `${business.businessName} Logo`);
         img.setAttribute('loading', 'lazy');
 
         lOne.textContent = business.address;
 
         if(business.website == "N/A") {
 
-            lTwo.innerHTML = `${business.pNumber} | <strong>No Website</strong>`;
+            lTwo.innerHTML = `${business.phone} | <strong>No Website</strong>`;
 
         } else {
 
-            lTwo.innerHTML = `${business.pNumber} | <a href="${business.website}" target="_blank">Website</a>`;
+            lTwo.innerHTML = `${business.phone} | <a href="${business.url}" target="_blank">Website</a>`;
         };
 
         footer.appendChild(lOne);
@@ -57,3 +57,4 @@ function shuffleArray(array) {
         array[j] = temp;
     }
 };
+

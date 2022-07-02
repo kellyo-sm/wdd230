@@ -5,7 +5,7 @@
         "phone": "999-999-9999",
         "url": "rosiesgreenhouse.com",
         "logo": "./images/flowers_in_vase.png",
-        "membershipLevel": "Gold"
+        "membershipLevel": "Bronze"
     },
     {
         "businessName": "The Castle",
@@ -13,7 +13,7 @@
         "phone": "999-999-9999",
         "url": "thecastle.com",
         "logo": "./images/thecastle.png",
-        "membershipLevel": "Gold"
+        "membershipLevel": "Silver"
     },
     {
         "businessName": "Fitness on Main",
@@ -53,7 +53,7 @@
         "phone": "605-775-2435",
         "url": "vicschmidtzpc.com",
         "logo": "./images/taxes.png",
-        "membershipLevel": "Gold"
+        "membershipLevel": "Silver"
     },
     {
         "businessName": "New Image Auto Tech",
