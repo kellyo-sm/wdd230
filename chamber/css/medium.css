@@ -45,5 +45,28 @@
         
     }
 
-    
+    .contact-form {
+        max-width: 60%;
+        margin: 5rem 4rem 3rem 6rem;
+        padding: 3rem;
+        margin: 3rem auto;
+    }
+
+    .ccon {
+        line-height: 4rem;
+        
+        
+    }
+
+    .contact-img {
+        margin: 0 auto;
+        max-width: 60%;
+        
+    }
+
+    /* .contact-img {
+        margin: -25rem 2rem 0 0;
+        float: right;
+        
+    } */
 }

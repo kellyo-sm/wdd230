@@ -98,6 +98,16 @@
             font-size: 1.5rem;
     }
 
+    .contact-form {
+        margin: 5rem 4rem 3rem 6rem;
+    }
+
+    .contact-img {
+        margin: -25rem 2rem 0 0;
+        float: right;
+        margin-left: 5rem;
+    }
+
     /* #join-footer {
     margin-top: 7rem;
 } */
