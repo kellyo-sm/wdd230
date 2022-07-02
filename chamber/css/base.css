@@ -150,7 +150,9 @@ button {
     margin-right: 6rem;
 }
 
-
+main {
+    max-width: 1180px;
+}
 
 .term {
    grid-column: 1/6; 
