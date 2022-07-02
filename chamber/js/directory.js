@@ -41,7 +41,7 @@ function displayBusiness(business) {
     membership.textContent = business.membershipLevel;
 
     // if(business.url == "N/A") {
-    business.href = "https://kellyo-sm.github.io/wdd230/chamber/404.html";
+    // business.href = "https://kellyo-sm.github.io/wdd230/chamber/404.html";
     // };
 
     website.setAttribute('href', `${business.url}`);
