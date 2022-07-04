@@ -1,74 +1,76 @@
-{"directory": [
+{
+  "directory": [
     {
-        "businessName": "Rosie's",
-        "address": "1259 Main Street",
-        "phone": "999-999-9999",
-        "url": "N/A",
-        "logo": "./images/flowers_in_vase.png",
-        "membershipLevel": "Bronze"
+      "businessName": "Rosie's",
+      "address": "1259 Main Street",
+      "phone": "999-999-9999",
+      "url": "N/A",
+      "logo": "./images/flowers_in_vase.png",
+      "membershipLevel": "Bronze"
     },
     {
-        "businessName": "The Castle",
-        "address": "589 Main Street",
-        "phone": "999-999-9999",
-        "url": "N/A",
-        "logo": "./images/thecastle.png",
-        "membershipLevel": "Silver"
+      "businessName": "The Castle",
+      "address": "589 Main Street",
+      "phone": "999-999-9999",
+      "url": "N/A",
+      "logo": "./images/thecastle.png",
+      "membershipLevel": "Silver"
     },
     {
-        "businessName": "Fitness on Main",
-        "address": "1256 Main Street",
-        "phone": "605-775-1234",
-        "url": "N/A",
-        "logo": "./images/gym.png",
-        "membershipLevel": "Gold"
+      "businessName": "Fitness on Main",
+      "address": "1256 Main Street",
+      "phone": "605-775-1234",
+      "url": "N/A",
+      "logo": "./images/gym.png",
+      "membershipLevel": "Gold"
     },
     {
-        "businessName": "Calamity Jane's",
-        "address": "572 Main street",
-        "phone": "999-999-9999",
-        "url": "N/A",
-        "logo": "./images/CalamityJanes.png",
-        "membershipLevel": "Bronze"
+      "businessName": "Calamity Jane's",
+      "address": "572 Main street",
+      "phone": "999-999-9999",
+      "url": "N/A",
+      "logo": "./images/CalamityJanes.png",
+      "membershipLevel": "Bronze"
     },
     {
-        "businessName": "Stella's",
-        "address": "813 Main Street",
-        "phone": "605-775-1275",
-        "url": "https://stellasinburke.com/",
-        "logo": "./images/stellas.png",
-        "membershipLevel": "Bronze"
+      "businessName": "Stella's",
+      "address": "813 Main Street",
+      "phone": "605-775-1275",
+      "url": "https://stellasinburke.com/",
+      "logo": "./images/stellas.png",
+      "membershipLevel": "Bronze"
     },
     {
-        "businessName": "Missouri Valley Insurance",
-        "address": "1102 Main Street",
-        "phone": "605-775-2636",
-        "url": "https://www.mvmic.com/",
-        "logo": "./images/Insurance.png",
-        "membershipLevel": "Gold"
+      "businessName": "Missouri Valley Insurance",
+      "address": "1102 Main Street",
+      "phone": "605-775-2636",
+      "url": "https://www.mvmic.com/",
+      "logo": "./images/Insurance.png",
+      "membershipLevel": "Gold"
     },
     {
-        "businessName": "Vic Schmidtz PC",
-        "address": "738 Main Street",
-        "phone": "605-775-2435",
-        "url": "https://www.ptindirectory.com",
-        "logo": "./images/taxes.png",
-        "membershipLevel": "Gold"
+      "businessName": "Vic Schmidtz PC",
+      "address": "738 Main Street",
+      "phone": "605-775-2435",
+      "url": "https://www.ptindirectory.com",
+      "logo": "./images/taxes.png",
+      "membershipLevel": "Gold"
     },
     {
-        "businessName": "New Image Auto Tech",
-        "address": "Highway 18",
-        "phone": "605-775-2325",
-        "url": "N/A",
-        "logo": "./images/NewImage.png",
-        "membershipLevel": "Silver"
+      "businessName": "New Image Auto Tech",
+      "address": "Highway 18",
+      "phone": "605-775-2325",
+      "url": "N/A",
+      "logo": "./images/NewImage.png",
+      "membershipLevel": "Silver"
     },
     {
-        "businessName": "Purvis Electric",
-        "address": "North Highway 18",
-        "phone": "605-775-2555",
-        "url": "N/A",
-        "logo": "./images/PurvisElectric.png",
-        "membershipLevel": "Silver"
+      "businessName": "Purvis Electric",
+      "address": "North Highway 18",
+      "phone": "605-775-2555",
+      "url": "N/A",
+      "logo": "./images/PurvisElectric.png",
+      "membershipLevel": "Silver"
     }
-]}
+  ]
+}
