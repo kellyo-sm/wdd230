@@ -9,6 +9,7 @@ body {
     font-family: 'Gentium Book Plus', serif;
     background-color: #E5E6E4;
     text-align: center;
+    margin: 0 auto;
 }
 
 h1, h2{
@@ -281,6 +282,23 @@ main h1 {
     margin: 1rem;
 }
 
+/********************
+    Temple Spotlight
+********************/
+
+.spotlight {
+    grid-column: 1/5;
+    margin: 2rem;
+}
+
+
+/********************
+    Temples Page
+********************/
+
+.secTemple {
+    margin: 3rem 1rem;
+}
 
 /* **************
     Resources
