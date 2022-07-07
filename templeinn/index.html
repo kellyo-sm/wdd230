@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Inn and Suites Home</title>
-    <meta name="description" content="Final Project BYU-Idaho WDD230 Kelly'O Smith Home page">
+    <title>Temple Inn and Suites</title>
+    <meta name="description" content="Welcome to the Temple Inn and Suites!  Find your perfect stay as you perfect yourself!">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,12 @@
 <body>
     <header>
         <div class="title">
-            <h1 id="title-big">Temple</h1>
-            <h3 id="title-small">Inn and Suites</h3>
+            <a href="index.html">
+                <h1 id="title-big">Temple</h1>
+            </a>
+            <a href="index.html">
+                <h3 id="title-small">Inn and Suites</h3>
+            </a>
         </div>
         <div class="social">
             <a class="socMedia" href="https://facebook.com/" target="_blank"><img src="images/facebook_pink_small.png" alt="facebook"></a>
@@ -34,10 +38,10 @@
 
             <ul id="primNav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Temples</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 
             </ul>
 
@@ -49,9 +53,42 @@
     </header>
 
     <main>
-        <h2>Hello World!!</h2>
+        <h1>Welcome!</h1>
+        <p class="homep">Our top priority is our guests!</p>
+        <br>
+        <article class="hero">
+            <picture class="heroimg"><img src="images/buggu_hotel_hall_900.webp" alt=""></picture>
+            <div class="travel">
+                <h2>Travel Well</h2>
+                <p>Explore our hotels located near majectic temples.  We have your well-being in mind during your stay.</p>
+                <button class="btn btnlearn" onclick="window.location.href='reservations.html'"></a><span>Learn More</span></button>
+
+            </div>
+        </article>
+        <br>
+
+        <p class="homep homep2">At Temple Inn and Suites our signature stay program empowers you to have a restful stay while you prepare to visit the temple.</p>
+        <p class="homp homep2"></p>
+        <section class="homesec">
+            <article>
+                <picture><img src="" alt=""></picture>
+                <h2></h2>
+                <p></p>
+            </article>
+        </section>
+        
+        <section class="spotlight">
+
+        </section>
+        
+
+
     </main>
+
+
     <div class="band"></div>
+
+
     <footer>
         
         <div class="foot1">
@@ -88,7 +125,7 @@
                     alt="twitter"></a>
         </div>
         <div class="assignment">
-            <p class="assignmentLine">&copy;<span id="year"></span> Temple Inn and Suites | <strong>Kelly'O Smith</strong> | WDD 230 Project | <span id="currentdate"></span></p>
+            <p class="assignmentLine">&copy;<span id="year"></span> Temple Inn and Suites | <strong>Kelly'O Smith</strong> | WDD 230 Final Project | <span id="currentdate"></span></p>
         </div>
         <script src="js/main.js"></script>
     </footer>
