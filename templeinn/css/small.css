@@ -156,7 +156,7 @@ nav ul li {
 /* **************
     Nav Buttons
 ****************/
-a:hover {
+nav ul li a:hover {
     color: #A6A2A2;
     text-shadow: 2px 1px 2px #584e50;
     letter-spacing: 2px;
@@ -183,7 +183,7 @@ main {
 
 main h1 {
     grid-column: 1/5;
-    margin: 1rem auto;
+    margin: 2.5rem auto;
     font-size: 3rem;
 }
 
