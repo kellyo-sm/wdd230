@@ -18,50 +18,136 @@
 
 <body>
     <header>
-        <div class="title">
-            <a href="index.html">
-                <h1 id="title-big">Temple</h1>
-            </a>
-            <a href="index.html">
-                <h3 id="title-small">Inn and Suites</h3>
-            </a>
-        </div>
-        <div class="social">
-            <a class="socMedia" href="https://facebook.com/" target="_blank"><img src="images/facebook_pink_small.png"
-                    alt="facebook"></a>
-            <a class="socMedia" href="https://instagram.com/" target="_blank"><img src="images/instagram_pink_small.png"
-                    alt="instagram"></a>
-            <a class="socMedia" href="https://twitter.com/" target="_blank"><img src="images/twitter_pink_small.png"
-                    alt="twitter"></a>
-        </div>
-        <div class="headerInfo">(000)-999-9999</div>
-        <nav class="nav responsive">
+            <div class="header-logo">
+                <picture class="logo"><img src="images/Utah_Logan.png" alt="temple inn and suites logo"></picture>
+                <div class="title">
+            
+                    <a href="index.html">
+                        <h1 id="title-big">Temple</h1>
+                    </a>
+                    <a href="index.html">
+                        <h3 id="title-small">Inn and Suites</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="social">
+                <a class="socMedia" href="https://facebook.com/" target="_blank"><img src="images/facebook_pink_small.png"
+                        alt="facebook"></a>
+                <a class="socMedia" href="https://instagram.com/" target="_blank"><img src="images/instagram_pink_small.png"
+                        alt="instagram"></a>
+                <a class="socMedia" href="https://twitter.com/" target="_blank"><img src="images/twitter_pink_small.png"
+                        alt="twitter"></a>
+            </div>
+            <div class="headerInfo">(000)-999-9999</div>
+            <nav class="nav responsive">
 
 
-            <button id="hambtn"><span>&#9776;</span></button>
+                <button id="hambtn"><span>&#9776;</span></button>
 
-            <ul id="primNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="temples.html">Temples</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <ul id="primNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 
-            </ul>
+                </ul>
 
-        </nav>
-        <div class="term">
-            <div class="date"></div>
-            <aside></aside>
-        </div>
+            </nav>
+            <div class="term">
+                <div class="date"></div>
+                <aside></aside>
+            </div>
     </header>
 
     <main>
-        <h2>Reservations</h2>
+        <h1 class="form-header">Make Your Reservation</h1>
+
+        <form action="#" method="get/post" autocomplete="off">
+            <p class="col-md-1">First Name <input type="text" size="25" maxlength="99" required></p>
+            <p class="col-md-1">Last Name <input type="text" size="25" maxlength="99" required></p>
+            <p class="col-md-2">Address <input type="text" size="20" maxlength="99" required></p>
+            <p class="col-md-2">Home State/Country <input placeholder="State/Country" type="text" size="25" maxlength="99" required></p>
+            <p class="col-md-4">Email<input placeholder="email@email.com" type="email" size="30" maxlength="99" required></p>
+            <p class="col-md-5">Telephone <input placeholder="(000)-000-0000" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" maxlength="99" required></p>
+            <div class="col-md-6" id="destination">
+                <p>Select Your Destination
+                    <select name="choices" size="1">
+                        <option value="choose">------------Select-------------</option>
+                        <option value="winterquarters">Winter Quarters, Nebraska</option>
+                        <option value="logan">Logan, Utah</option>
+                        <option value="hamilton">Hamilton, New Zealand</option>
+                        <option value="idahofalls">Idaho Falls, Idaho</option>
+                        <option value="melbourne">Melbourne, Australia</option>
+                        <option value="rome">Rome, Italy</option>
+                        <option value="sandiego">San Diego, California</option>
+                        <option value="rexburg">Rexburg, Idaho</option>
+                    </select>
+                </p>
+            </div>
+            
+            
+            <div class="checks">
+                </div>
+                    <input class="form-control" type="date" required>
+                    <span class="form-label">Check In</span>
+                <div>
+                <div>
+                    <input class="form-control" type="date" required>
+                    <span class="form-label">Check Out</span>
+                </div>
+            </div>
+            <br>
+            <div class="numbers">
+            <div>
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" selected hidden># of Rooms</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    
+                    <span class="form-label">Rooms</span>
+                </div>
+            </div>
+            <div class="col-med-8">
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" selected hidden># of Adults</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <span class="form-label">Adults</span>
+                </div>
+            </div>
+            <div class="col-med-8">
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" selected hidden># of Children</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <span class="form-label">Children</span>
+                </div>
+            </div>
+        </div>
+        <br>
+            <br>
+            <input class="formbtn" type="submit" value="Book Now">
+            <!-- <input class="formbtn" type="reset" value="Reset"> -->
+        </form>
     </main>
     <div class="band"></div>
     <footer>
-
+        <div class="content">
         <div class="foot1">
             <div class="footerList">
                 <ul class="footerNav">
@@ -100,6 +186,7 @@
                     Smith</strong> | WDD 230 Project | <span id="currentdate"></span></p>
         </div>
         <script src="js/main.js"></script>
+    </div>
     </footer>
 </body>
 

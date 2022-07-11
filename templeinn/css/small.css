@@ -18,6 +18,7 @@ h1, h2{
 
 p {
     text-align: center;
+    grid-column: 1/5;
 }
 
 a {
@@ -31,28 +32,34 @@ a {
 button {
     margin: 0 auto;
     cursor: pointer;
-    /* line-height: 50px; */
     height: 50px;
     text-align: center;
     padding: 0.5rem;
-    
     background-color: #E5E6E4;
     border: none;
 }
-
-button span {
-    transition: ease 0.6s;
-}
-
 
 button:hover {
     letter-spacing: 2px;
     border-top: 1px solid #847577;
     border-bottom: 1px solid #847577;
-    transition: ease-in-out 0.6s;
+    transition: all 1s ease 0.6s;
     opacity: 0.75;
 }
 
+button:hover::before, button:hover::after {
+    transition: all 1s ease-in-out 0.6s;
+}
+
+a button {
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    /* position: absolute; */
+    transform: scale(1, 1);
+    /* transform: translate(20px); */
+
+}
 
 /* **************
      Header
@@ -66,6 +73,17 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
     color: #847577;
+}
+
+.header-logo {
+    display: flex;
+    grid-column: 2;
+    margin: 2rem 0 0 0;
+}
+
+.logo {
+    margin-top: 2rem;
+    margin-right: 1.2rem;
 }
 
 .title {
@@ -102,16 +120,20 @@ header {
 }
 
 .social {
-    grid-column: 4/5;
+    grid-column: 3/5;
     margin: auto 0;
     
 }
 
 .headerInfo {
-    grid-column: 4/5;
+    grid-column: 3/5;
     margin-top: -3rem;
     font-size: 1.2rem;
     
+}
+
+.logo {
+
 }
 
 /* **************
@@ -168,7 +190,12 @@ nav ul li a:hover {
 
 }
 
-
+nav ul li a {
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1,1);
+}
 
 /* **************
       Main
@@ -184,7 +211,7 @@ main {
 
 main h1 {
     grid-column: 1/5;
-    margin: 2.5rem auto;
+    margin: 4rem auto 0 auto;
     font-size: 3rem;
 }
 
@@ -217,14 +244,15 @@ main h1 {
 
 .heroimg {
     position: absolute;
-    
+    border: 1px solid #584e50;
+    padding: 1rem 1rem 0.8rem 1rem;
 }
 
 .travel {
     position: relative;
     max-width: 300px;
     padding: 1rem;
-    margin: 25rem 0 0 35rem;
+    margin: 15rem 0 0 45rem;
     background-color: #e0d4d2;
     box-shadow: 3px 7px 3px #584e50;
 }
@@ -245,7 +273,7 @@ main h1 {
     Section Articles
 **********************/
 
-.homesec {
+.container {
     grid-column: 1/5;
     display: flex;
     margin: 3rem;
@@ -253,7 +281,7 @@ main h1 {
     
 }
 
-.homesec article {
+.container article {
     width: 350px;
     /* border: 1px solid #584e50; */
     margin: 1rem;
@@ -261,7 +289,7 @@ main h1 {
     
 }
 
-.homesec article img {
+.container article img {
     max-width: 85%;
     /* max-height: 300px; */
     height: 250px;
@@ -270,15 +298,15 @@ main h1 {
     
 }
 
-.homesec h2 {
+.container h2 {
     margin: 1rem;
 }
 
-.homesec p {
+.container p {
     margin: 0 1.6rem;
 }
 
-.homesec button {
+.container button {
     margin: 1rem;
 }
 
@@ -299,6 +327,108 @@ main h1 {
 .secTemple {
     margin: 3rem 1rem;
 }
+
+/********************
+    Reservations
+********************/
+
+form {
+    text-align: center;
+    max-width: 850px;
+    grid-column: 2/4;
+    margin: 5rem auto;
+    padding: 2rem;
+    color: #847577;
+    border: 7px double #584e50;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+input {
+    color: #A6A2A2;
+    border: none;
+    padding: 0.2rem;
+    border-bottom: 1px solid #584e50;
+    background-color: transparent;
+    margin-left: 1rem;
+}
+
+form p input::placeholder {
+    color: #A6A2A2;
+}
+
+select {
+    color: #847577;
+    margin: 1rem 0;
+}
+
+form p {
+    margin: 1rem;
+}
+
+.form-label {
+    margin-right: 1rem;
+}
+
+.form-control {
+    border: none;
+    background-color: #d6d8d4;
+}
+
+#destination {
+    margin: 0 10rem;
+}
+
+.checks {
+    display: flex;
+    margin: 1rem 4rem;
+}
+
+.numbers {
+    display: flex;
+    margin: 1rem 8rem;
+}
+
+/* **************
+    Form Buttons
+****************/
+
+.formbtn  {
+    margin: 2rem auto;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0.8rem;
+    background-color: #A6A2A2;
+    color: #E5E6E4;
+    border: none;
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.formbtn:hover {
+    letter-spacing: 4px;
+    border-top: 2px solid #584e50;
+    border-bottom: 2px solid #584e50;
+    transition: all 1s ease 0.6s;
+    opacity: 0.75;
+}
+
+.formbtn:hover::before,
+.formbtn:hover::after {
+    /* border-top: 2px solid #584e50;
+    border-bottom: 2px solid #584e50; */
+    transition: all 0.6s ease-in-out 0.6s;
+}
+
+
 
 /* **************
     Resources
@@ -331,7 +461,13 @@ main h1 {
 ****************/
 
 footer {
+    
     background-color: #A6A2A2;
+    
+}
+
+.content {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
     margin: 0 auto;
@@ -345,7 +481,7 @@ footer ul a {
 
 .foot1 {
     margin: 1rem 4rem;
-    grid-column: 2;
+    grid-column: 1;
     display: flex;
     line-height: 1.3rem;
 }
@@ -372,9 +508,9 @@ footer ul {
     
 }
 
-.address {
+/* .address {
     grid-column: 3;
-}
+} */
 
 .assignment {
     grid-column: 1/5;
