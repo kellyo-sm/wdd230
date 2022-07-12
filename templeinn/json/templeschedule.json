@@ -1,0 +1,75 @@
+{
+    "schedule": [
+        {
+            "title": "Baptism Schedule",
+            "monday": "Monday: ",
+            "monInfo": "Closed",
+            "tuesday": "Tuesday: ",
+            "tueinfo": "5am - 7am (Walk-ins only), 7am - 8pm (Walk-ins and appointments)",
+            "wednesday": "Wednesday: ",
+            "wedInfo": "5am - 5pm (Walk-ins and appointments), 6pm - 7pm (Walk-ins and appointments)",
+            "thurs": "Thursday: ",
+            "thursinfo": "5am - 8pm (Walk-ins and appointments)",
+            "fri": "Friday: ",
+            "friInfo": "5am - 5pm (Walk-ins and appointments), 6pm - 8pm (Family Priority Time)",
+            "sat": "Saturday: ",
+            "satinfo": "6am - 5:30pm (Walk-ins and appointments), 6pm - 8pm (Family Priority Time)",
+            "sun": "Sunday: ",
+            "sunInfo": "Closed"
+        },
+        
+        {
+            "title": "Initiatory Schedule",
+            "monday": "Monday: ",
+            "monInfo": "Closed",
+            "tuesday": "Tuesday: ",
+            "tueinfo": "6am - 8pm (appointments only)",
+            "wednesday": "Wednesday: ",
+            "wedInfo": "6am - 8pm (appointments only)",
+            "thurs": "Thursday: ",
+            "thursinfo": "6am - 8pm (appointments only)",
+            "fri": "Friday: ",
+            "friInfo": "6am - 8pm (appointments only)",
+            "sat": "Saturday: ",
+            "satinfo": "6am - 8pm (appointments only)",
+            "sun": "Sunday: ",
+            "sunInfo": "Closed"
+        },
+
+        {
+            "title": "Endowment Schedule",
+            "monday": "Monday: ",
+            "monInfo": "Closed",
+            "tuesday": "Tuesday: ",
+            "tueinfo": "6am - 7pm on the hour(Walk-ins and appointments only)",
+            "wednesday": "Wednesday: ",
+            "wedInfo": "6am - 7pm on the hour (apointments only)",
+            "thurs": "Thursday: ",
+            "thursinfo": "6am - 7pm on the hour (apointments only)",
+            "fri": "Friday: ",
+            "friInfo": "6am - 7pm on the hour (apointments only)",
+            "sat": "Saturday: ",
+            "satinfo": "6am - 7pm on the hour (apointments only)",
+            "sun": "Sunday: ",
+            "sunInfo": "Closed"
+        },
+
+        {
+            "title": "Sealing Schedule",
+            "monday": "Monday: ",
+            "monInfo": "Closed",
+            "tuesday": "Tuesday: ",
+            "tueinfo": "7am - 8pm (Walk-ins and appointments)",
+            "wednesday": "Wednesday: ",
+            "wedInfo": "6am - 8pm (Walk-ins and appointments)",
+            "thurs": "Thursday: ",
+            "thursinfo": "6am - 8pm (Walk-ins and appointments)",
+            "fri": "Friday: ",
+            "friInfo": "6am - 8pm (Walk-ins and appointments)",
+            "sat": "Saturday: ",
+            "satinfo": "6am - 8pm (Walk-ins and appointments)",
+            "sun": "Sunday: ",
+            "sunInfo": "Closed"
+        }
+    ]
+}
