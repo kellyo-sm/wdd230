@@ -1,7 +1,7 @@
 {
     "temples": [
         {
-            "img": "",
+            "img": "./images/winterqarters600.webp",
             "templeName": "Winter Quarters, NE",
             "label1": "Address: ",
             "address": "8283 N 34th St",
@@ -14,7 +14,7 @@
             "label4": "Services: ",
             "services": "No Services",
             "label5": "Announced: ",
-            "announcements": "Announced: 14 June 1999",
+            "announcements": "14 June 1999",
             "label6": "Groundbreaking: ",
             "grndbrkDate": "28 November 1999",
             "label7": "Dedication: ",
@@ -23,7 +23,7 @@
             "link": "href=index.html"
         },
         {
-            "img": "",
+            "img": "./images/logantemple600.webp",
             "templeName": "Logan, UT",
             "label1": "Address: ",
             "address": "175 North 300 East",
@@ -67,7 +67,7 @@
             "link": "href=index.html"
         },
         {
-            "img": "",
+            "img": "./images/idahofalls600.webp",
             "templeName": "Idaho Falls, ID",
             "label1": "Address: ",
             "address": "1000 Memorial Dr",
