@@ -132,10 +132,6 @@ header {
     
 }
 
-.logo {
-
-}
-
 /* **************
     Navigation
 ****************/
@@ -231,7 +227,7 @@ main h1 {
 
 .homep2 {
     max-width: 250px;
-    margin-bottom: 2rem;
+    margin:6rem auto 0 auto;
     grid-column: 3/4; 
 }
 
@@ -240,6 +236,7 @@ main h1 {
     display: flex;
     justify-content: center;
     margin: 4rem 5rem 4rem 0;
+    
 }
 
 .heroimg {
@@ -252,9 +249,11 @@ main h1 {
     position: relative;
     max-width: 300px;
     padding: 1rem;
-    margin: 15rem 0 0 45rem;
+    margin: 15rem 0 0 55rem;
     background-color: #e0d4d2;
+    border: 1rem solid #E5E6E4;
     box-shadow: 3px 7px 3px #584e50;
+
 }
 
 .travel h2 {
