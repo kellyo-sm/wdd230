@@ -1,6 +1,7 @@
 {
     "closures": [
         {
+            "temple": "Winter Quarters",
             "year": "2022",
             "week1": "Monday, 29 August 2022 - Monday, 26 September 2022",
             "week2": "Saturday, 1 October 2022",
@@ -10,11 +11,36 @@
         },
 
         {
+            "temple": "Winter Quarters",
             "year": "2023",
             "week1": "Monday, 13 March 2023 - Monday, 20 March 2023",
             "week2": "Saturday, 1 April 2023",
             "week3": "Tuesday, 4 July 2023",
             "week4": "Monday, 14 August 2023 - Monday, 18 December 2023"
+        },
+
+        {
+            "temple": "Logan",
+            "year": "2022",
+            "week1": "Saturday, 1 October 2022",
+            "week2": "Monday, 3 October 2022 - Monday, 17 October 2022",
+            "week3": "Wednesday, 23 November 2022 (Limited Operations)",
+            "week4": "Thursday, 24 November 2022",
+            "week5": "Saturday, 24 December 2022",
+            "week6": "Saturday, 31 December 2022"
+        },
+
+        {
+            "temple": "Logan",
+            "year": "2023",
+            "week1": "Monday, 13 February 2023 - Monday, 20 February 2023",
+            "week2": "Saturday, 1 April 2023",
+            "week3": "Tuesday, 4 July 2023",
+            "week4": "Saturday, 30 September 2023",
+            "week5": "Monday, 2 October 2023 - Monday, 16 October 2023",
+            "week6": "Wednesday, 22 November 2023 (Limited Operations)",
+            "week7": "Thursday, 23 November 2023",
+            "week8": "Saturday, 23 December 2023"
         }
     ]
 }
