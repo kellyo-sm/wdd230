@@ -135,7 +135,7 @@
             "link": "href=index.html"
         },
         {
-            "img": "",
+            "img": "images/sandiego600.webp",
             "templeName": "San Diego, CA",
             "label1": "Address: ",
             "address": "7474 Charmant Dr",

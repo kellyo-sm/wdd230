@@ -23,6 +23,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #584e50;
 }
 
 /* **************
@@ -30,7 +31,7 @@ a {
 ****************/
 
 button {
-    margin: 0 auto;
+    margin: 1rem auto;
     cursor: pointer;
     height: 50px;
     text-align: center;
@@ -323,11 +324,50 @@ main h1 {
     Temples Page
 ********************/
 
-
 #temple-info {
     grid-column: 2/4;
     margin: 2rem auto;
     max-width: 400px;
+}
+
+/********************
+    Temples Cards
+********************/
+
+#temple-grid {
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+        gap: 12px;
+}
+
+
+.templeCards {
+    background:linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border: 1px solid #584e50;
+    box-shadow: 3px 4px 4px #584e50;
+    padding: 1.3rem;
+    margin: 1rem;
+}
+
+.templeButtons {
+    margin: 1rem;
+    
+}
+
+.templeInfo h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.all-images {
+    border: 2px solid #584e50;
+    padding: 10px;
+}
+
+.likeBtn {
+    font-size: 1.2rem;
+    background: transparent;
 }
 
 /********************
@@ -382,6 +422,10 @@ form p {
 
 #destination {
     margin: 0 10rem;
+}
+
+#destination select {
+    background-color: #d6d8d4;
 }
 
 .checks {
@@ -500,14 +544,15 @@ footer ul {
     grid-column: 4;
     grid-row: 1;
     line-height: 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem 2rem 1rem -2rem;
     color: #584e50;
+
 }
 
 .socialFoot {
     grid-column: 4;
     grid-row: 2;
-    
+    margin-right: 2rem;
 }
 
 /* .address {
@@ -519,5 +564,6 @@ footer ul {
     grid-row: 3;
     text-align: center;
     color: #584e50;
+
 }
 

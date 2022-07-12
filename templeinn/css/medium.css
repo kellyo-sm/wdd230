@@ -1,0 +1,23 @@
+@media (min-width: 45rem) {
+
+    #temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .templeCards {
+        max-width: 350px;
+        
+    }
+
+    .footAddress {
+        grid-column: 4;
+        grid-row: 1;
+        line-height: 1.5rem;
+        margin: 1rem 0;
+        color: #584e50;
+    
+    }
+
+    
+
+}
