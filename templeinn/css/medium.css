@@ -1,4 +1,4 @@
-@media (min-width: 45rem) {
+@media (min-width: 43rem) {
 
     #temple-grid {
         grid-template-columns: repeat(2, 1fr);
