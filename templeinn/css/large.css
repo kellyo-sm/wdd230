@@ -3,14 +3,13 @@
     #temple-grid {
             justify-content: center;
             display: flex;
-            gap: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
    
     
     .templeCards {
         max-width: 300px;
-       
+        
     }
 
     

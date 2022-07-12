@@ -339,6 +339,7 @@ main h1 {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 12px;
         margin-top: 2rem;
+        
 }
 
 
@@ -347,7 +348,7 @@ main h1 {
     border: 1px solid #584e50;
     box-shadow: 3px 4px 4px #584e50;
     padding: 1.3rem;
-    margin: 1rem;
+    margin: 2rem 0.2rem;
 }
 
 .templeButtons {
@@ -507,16 +508,14 @@ form p {
 ****************/
 
 footer {
-    
     background-color: #A6A2A2;
-    
+    max-width: 1200px;
 }
 
 .content {
     max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-    margin: 0 auto;
+    display: block;
+    
 }
 
 footer ul a {
@@ -530,10 +529,12 @@ footer ul a {
     grid-column: 1;
     display: flex;
     line-height: 1.3rem;
+    margin: auto;
 }
 
 .footerList {
     margin-right: 5rem;
+    margin: 1rem auto;
 }
 
 footer ul {
@@ -544,7 +545,7 @@ footer ul {
     grid-column: 4;
     grid-row: 1;
     line-height: 1.5rem;
-    margin: 1rem 2rem 1rem -2rem;
+    margin: 2rem auto;
     color: #584e50;
 
 }
