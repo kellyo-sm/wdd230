@@ -221,14 +221,13 @@ main h1 {
 /* **************
     Home Page
 ****************/
-
-.homep {
+.pageIntro {
     grid-column: 1/5;
 }
 
 .homep2 {
     max-width: 250px;
-    margin:6rem auto 0 auto;
+    margin:6rem auto 2rem auto;
     grid-column: 3/4; 
 }
 
@@ -276,7 +275,7 @@ main h1 {
 .container {
     grid-column: 1/5;
     display: flex;
-    margin: 3rem;
+    margin: 1rem;
     justify-content: center;
     
 }
@@ -325,7 +324,7 @@ main h1 {
 ********************/
 
 #page-info {
-    grid-column: 2/4;
+    
     margin: 1rem auto;
     max-width: 400px;
 }
@@ -335,10 +334,10 @@ main h1 {
 ********************/
 
 #temple-grid {
-    display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 12px;
-        margin-top: 2rem;
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 12px;
+    margin-top: 2rem;
         
 }
 
@@ -369,6 +368,88 @@ main h1 {
 .likeBtn {
     font-size: 1.2rem;
     background-color: transparent;
+}
+
+/********************
+    Services
+********************/
+
+
+#amenities {
+    max-width: 450px;
+    margin: 15rem 30rem 17rem 8rem;
+    position: relative;
+    z-index: -1;
+}
+
+
+#amenities-list h2, #specialized-list h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+
+#amenities-list {
+    line-height: 2rem;
+    text-align: left;
+    
+}
+
+#am-img2 {
+    max-width: 300px;
+    padding: 1rem;
+    margin: 2rem 5rem 2rem 34rem;
+    position: absolute;
+}
+
+#specialized-grid {
+    grid-column: 1/5;
+    margin: 2rem auto;
+}
+
+#specialized-list ul {
+    margin: 2rem;
+}
+
+#specialized-list ul li {
+    text-align: left;
+    margin-left: 6rem;
+}
+
+.serviceCards {
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    padding: 2rem;
+    border: 1px solid #584e50;
+}
+
+.serviceCards #image-grid {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.container img {
+    height: 250px;
+    box-shadow: 3px 7px 4px #584e50;
+    max-width: 100%;
+}
+
+#specializedBtns {
+    margin: 4rem auto; 
+    max-width: 300px;
+    
+}
+
+#specializedBtns h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #584e50;
+}
+
+.special-Btn {
+    margin: 3rem 2rem;
+    font-size: 1.1rem;
 }
 
 /********************
@@ -470,12 +551,36 @@ form p {
 
 .formbtn:hover::before,
 .formbtn:hover::after {
-    /* border-top: 2px solid #584e50;
-    border-bottom: 2px solid #584e50; */
     transition: all 0.6s ease-in-out 0.6s;
 }
 
+/********************
+    Reception
+********************/
 
+.lg-container {
+    grid-column: 1/5;
+    margin: 2rem auto;
+    
+}
+
+.lg-container img {
+    margin: 0 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border: 1px solid #584e50;
+}
+
+#resbtn {
+    grid-column: 1/5;
+    margin: 3rem auto;
+    font-size: 1.3rem;
+}
+
+#resbtn button {
+    
+    line-height: auto;
+}
 
 /* **************
     Resources

@@ -1,15 +1,18 @@
-@media (min-width: 45rem) {
+@media (min-width: 43rem) {
 
     #temple-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 850px;
+        grid-column: 1/5;
+        /* display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(2, 1fr)); */
+        justify-content: center;
+        max-width: 950px;
         margin: 0.2rem auto;
         
     }
 
     .templeCards {
         max-width: 350px;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .footAddress {
@@ -31,5 +34,13 @@
     .footerList {
         margin: 2rem auto;
         
+    }
+
+    .serviceCards {
+        grid-column: 1/5;
+    }
+
+    #image-grid {
+        display: flex;
     }
 }
