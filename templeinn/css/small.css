@@ -509,7 +509,7 @@ form p {
 
 footer {
     background-color: #A6A2A2;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .content {
