@@ -478,14 +478,14 @@ form {
 }
 
 input {
-    color: #A6A2A2;
+    color: #847577;
     border: none;
     padding: 0.2rem;
     border-bottom: 1px solid #584e50;
     background-color: transparent;
     margin-left: 1rem;
 }
-
+.comments textarea::placeholder,
 form p input::placeholder {
     color: #A6A2A2;
 }
@@ -526,6 +526,19 @@ form p {
     margin: 1rem 8rem;
 }
 
+.comments {
+    display: grid;
+    margin: 1rem auto;
+}
+
+.comments textarea {
+    color: #847577;
+}
+
+.form-description {
+    color: #584e50;
+}
+
 /* **************
     Form Buttons
 ****************/
@@ -534,7 +547,7 @@ form p {
     margin: 2rem auto;
     cursor: pointer;
     height: 50px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: center;
     border-radius: 20px;
     padding: 0.8rem;
@@ -545,6 +558,10 @@ form p {
     visibility: visible;
     opacity: 1;
     transform: scale(1, 1);
+}
+
+#bookbtn {
+    margin: 1rem auto;
 }
 
 .formbtn:hover {
