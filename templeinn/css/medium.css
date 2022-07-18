@@ -43,4 +43,23 @@
     #image-grid {
         display: flex;
     }
+
+     h1 {
+        font-size: 26px;
+     }
+    
+    .underline {
+         width: 68px;
+     }
+    
+     #form_button {
+         padding: 15px 25px;
+     }
+
+     input[type='text'],
+     [type='email'],
+    select,
+     textarea {
+       font-size: 0.875em;
+     }
 }

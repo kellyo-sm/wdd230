@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -436,6 +438,7 @@ display: grid;
 #specializedBtns {
     margin: 4rem auto; 
     max-width: 300px;
+    grid-column: 1/5;
 }
 
 
@@ -479,6 +482,10 @@ form {
     align-items: center;
 }
 
+#contact-form {
+    margin: 2rem auto;
+}
+
 input {
     color: #847577;
     border: none;
@@ -511,7 +518,7 @@ form p {
 
 .form-control {
     border: none;
-    background-color: #d6d8d4;
+    background-color: #cac6c6;
 }
 
 #destination {
@@ -519,7 +526,7 @@ form p {
 }
 
 #destination select {
-    background-color: #d6d8d4;
+    background-color: #cac6c6;
 }
 
 .checks {
@@ -634,14 +641,72 @@ form p {
     line-height: auto;
 }
 
+#recinfo {
+    max-width: 550px;
+    grid-column: 1/5;
+    margin: 2rem auto;
+}
+
+#recinfo .pageIntro {
+    margin-bottom: 2rem;
+}
+
+#recinfo .pageIntro h2 {
+    margin-bottom: 1rem;
+}
+
+#reclist {
+    text-decoration: dotted;
+    margin-bottom: 1.4rem;
+}
+
+#reclist li{
+    text-align: left;
+    list-style-type: disc;
+    line-height: 1.6rem;
+}
+
 /* **************
     Missionary
 ****************/
 
 .missimg {
-    grid-column: 2/4;
-    margin: 0 ;
+    grid-column: 1/5;
+    margin: 4rem auto;    
 }
+
+.missimg picture {
+    margin: 0 12px;
+}
+
+.missimg img {
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+}
+
+#missInfo {
+    background: linear-gradient(to right,
+        rgba(132, 117, 119, 0.5),
+        rgba(166, 162, 162, 0.32),
+        rgba(248, 237, 235, 0.37),
+        rgba(166, 162, 162, 0.42),
+        rgba(132, 117, 119, 0.5));
+    grid-column: 1/5;
+    margin: 2rem auto;
+    border: 1px solid #584e50;
+    border-radius: 20px;
+}
+
+#missInfo .pageIntro, #missInfo p {
+    margin: 2rem 1rem;
+}
+
+#missInfo ul li {
+    list-style-type: none;
+    line-height: 2rem;
+    padding: 0 2rem;
+}
+
 
 
 /* **************
@@ -669,6 +734,109 @@ form p {
 .imageResource, ul li {
     list-style-type: none;
 }
+
+/* **************
+      Contact
+****************/
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+
+.underline {
+    border-bottom: solid 2px #584e50;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #584e50;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #584e50;
+}
+
+:-moz-placeholder {
+    color: #584e50;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #584e50;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #584e50;
+}
+
+.submit .formbtn {
+    margin-left: 5rem;
+}
+
 
 /* **************
       Footer
