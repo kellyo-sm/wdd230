@@ -1,5 +1,5 @@
 const requestURL = "https://kellyo-sm.github.io/wdd230/templeinn/json/temples.json";
-const spotlt = document.querySelector(".spotlight");
+const spotlt = document.querySelector("#spotlight");
 
 fetch(requestURL)
   .then(function (response) {
@@ -8,10 +8,10 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const temple = jsonObject["temples"];
     shuffleArray(temple);
-    temple.forEach(displayBusiness);
+    temple.forEach(displayTemple);
   });
 
-function displayBusiness(temple) {
+function displayTemple(temple) {
   
     let card = document.createElement("section");
     let name = document.createElement("h1");
@@ -22,19 +22,10 @@ function displayBusiness(temple) {
 
     console.log(temple);
 
-    name.textContent = business.businessName;
+    name.textContent = temple.templeName;
 
-    img.setAttribute("src", business.logo);
-    img.setAttribute("alt", `${business.businessName} Logo`);
-    img.setAttribute("loading", "lazy");
+    lOne.textContent = temple.address;
 
-    lOne.textContent = business.address;
-
-    if (business.url == "N/A") {
-      lTwo.innerHTML = `${business.phone}`;
-    } else {
-      lTwo.innerHTML = `${business.phone} | <a href="${business.url}" target="_blank">Website</a>`;
-    }
 
     footer.appendChild(lOne);
     footer.appendChild(lTwo);
@@ -42,9 +33,9 @@ function displayBusiness(temple) {
     card.appendChild(img);
     card.appendChild(footer);
 
-    document.querySelector("div.spotlight").appendChild(card);
+    document.querySelector("div.spotlight");
   }
-}
+
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {

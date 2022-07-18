@@ -228,9 +228,10 @@ main h1 {
 }
 
 .homep2 {
-    max-width: 250px;
+    max-width: 350px;
+    grid-column: 1/5; 
     margin:6rem auto 2rem auto;
-    grid-column: 3/4; 
+    
 }
 
 .hero {
