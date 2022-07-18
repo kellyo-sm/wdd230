@@ -19,8 +19,10 @@ function displayTemples(temple) {
   let templeName = document.createElement('h2');
   let label1 = document.createElement('h3');
   let address = document.createElement('p');
+  let city = document.createElement('p');
+  let country = document.createElement('p');
   let label2 = document.createElement('h3');
-  let phoneNumber = document.createElement('p');
+  let phone = document.createElement('p');
   let label3 = document.createElement('h3');
   let email = document.createElement('p');
   let label4 = document.createElement('h3');
@@ -39,12 +41,6 @@ function displayTemples(temple) {
   picture.setAttribute('alt', `${temple.templeName}`);
   picture.setAttribute('loading', 'lazy');
   picture.classList.add("tImg");
-
-  // if (temple.url == "N/A") {
-  //     lTwo.innerHTML = `${temple.phone}`;
-  //   } else {
-  //     lTwo.innerHTML = `${temple.phone} | <a href="${temple.url}" target="_blank">Website</a>`;
-  //   }
 
           
   // Change the textContent property of the h3 element to conthe companies full name
@@ -75,15 +71,15 @@ function displayTemples(temple) {
   // Add/append the section(card) with the h2 element
   group.appendChild(picture);
   group.appendChild(templeName);
-  group.appendChild(title1);
+  group.appendChild(label1);
   group.appendChild(address);
-  group.appendChild(title2);
-  group.appendChild(phoneNumber);
-  group.appendChild(title3);
+  group.appendChild(label2);
+  group.appendChild(phone);
+  group.appendChild(label3);
   group.appendChild(email);
-  group.appendChild(title4);
+  group.appendChild(label4);
   group.appendChild(services);
-  group.appendChild(title5);
+  group.appendChild(label5);
   group.appendChild(announcement);
   group.appendChild(groundbreaking);
   group.appendChild(dedication);
