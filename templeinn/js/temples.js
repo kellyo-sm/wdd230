@@ -15,7 +15,6 @@ function displayTemples(temple) {
   // Create elements to add to the document 
   let card = document.createElement('article');
   let img = document.createElement('img');        
-  let group = document.createElement('div');
   let templeName = document.createElement('h2');
   let label1 = document.createElement('h3');
   let address = document.createElement('p');
@@ -72,7 +71,7 @@ function displayTemples(temple) {
   label5.textContent = `${temple.label5}`;
   announcement.textContent = `${temple.announcements}`;
   label6.textContent = `${temple.label6}`;
-  groundbreaking.textContent = `${temple.groundbreaking}`;
+  groundbreaking.textContent = `${temple.grndbrkDate}`;
   label7.textContent = `${temple.label7}`;
   dedication.textContent = `${temple.dedication}`;
   closures.textContent = `${temple.clschedule}`;
@@ -88,20 +87,32 @@ function displayTemples(temple) {
   
           
   // Add/append the section(card) with the h2 element
-  group.appendChild(img);
-  group.appendChild(templeName);
-  group.appendChild(label1);
-  group.appendChild(address);
-  group.appendChild(label2);
-  group.appendChild(phone);
-  group.appendChild(label3);
-  group.appendChild(email);
-  group.appendChild(label4);
-  group.appendChild(services);
-  group.appendChild(label5);
-  group.appendChild(announcement);
-  group.appendChild(groundbreaking);
-  group.appendChild(dedication);
+  card.appendChild(img);
+  card.appendChild(templeName);
+  card.appendChild(label1);
+  card.appendChild(address);
+  card.appendChild(label2);
+  card.appendChild(phone);
+  card.appendChild(label3);
+  card.appendChild(email);
+  card.appendChild(label4);
+  card.appendChild(services);
+  card.appendChild(label5);
+  card.appendChild(announcement);
+  card.appendChild(label6);
+  card.appendChild(groundbreaking);
+  card.appendChild(label7);
+  card.appendChild(dedication);
+  card.appendChild(closures);
+  card.appendChild(cl1);
+  card.appendChild(cl2);
+  card.appendChild(cl3);
+  card.appendChild(cl4);
+  card.appendChild(cl5);
+  card.appendChild(cl6);
+  card.appendChild(cl7);
+  card.appendChild(cl8);
+  card.appendChild(cl9);
   
             
           

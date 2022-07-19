@@ -66,25 +66,24 @@ function displayTemple(temple) {
 // }
 
 
-// function shuffleArray(array) {
-//     for (var i = array.length - 1; i > 0; i--) {
-//         var j = Math.floor(Math.random() * (i - 3));
-
-//         var temp = array[i];
-//         array[i] = array[j];
-//         array[j] = temp;
-//     }
-//     return array;
-// }
-
 function shuffleArray(array) {
-  let spotLight = array.length;
-  while (0 !== spotLight) {
-    let randId = Math.floor(Math.random() * spotLight);
-    spotLight -= 1;
-    let tmp = array[spotLight];
-    array[spotLight] = array[randId];
-    array[randId] = tmp;
-  }
-  return array;
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
 }
+
+// function shuffleArray(array) {
+//   let spotLight = array.length;
+//   while (0 !== spotLight) {
+//     let randId = Math.floor(Math.random() * spotLight);
+//     spotLight -= 1;
+//     let tmp = array[spotLight];
+//     array[spotLight] = array[randId];
+//     array[randId] = tmp;
+//   }
+//   return array;
+// }

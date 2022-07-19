@@ -94,7 +94,9 @@
             "cl6" : "Tuesday, 24 January 2023 - Monday, 6 February 2023",
             "cl7" : "Saturday, 1 April 2023",
             "cl8" : "Tuesday, 27 June 2023 - Monday, 10 July 2023",
-            "cl9" : "Saturday, 7 October 2023"
+            "cl9" : "Saturday, 7 October 2023",
+            "like" : "&#9825;",
+            "clicked" : "&#9829;"
         },
         {
             "img": "images/sandiego600.webp",
