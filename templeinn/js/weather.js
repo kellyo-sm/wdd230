@@ -4,8 +4,8 @@ const windSpeed = document.querySelector('#speed');
 const windchill = document.querySelector("#chill");
 const captionDesc = document.querySelector('figcaption');
 
-const latitude = 43.182
-const longitude = -99.292
+const latitude = 38.981
+const longitude = -77.100
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=4c30c204135027cef9944117fb3a6fbc`;
 
