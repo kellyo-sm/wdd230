@@ -32,6 +32,10 @@ function displayTemples(temple) {
   let groundbreaking = document.createElement('p');
   let label7 = document.createElement('h3');
   let dedication = document.createElement('p');
+  let ordinance = document.createElement('h3');
+  let ordschedule = document.createElement('p');
+  let session = document.createElement('h3');
+  let sesschedule = document.createElement('p');
   let closures = document.createElement('h3');
   let cl1 = document.createElement('p');
   let cl2 = document.createElement('p');
@@ -44,8 +48,8 @@ function displayTemples(temple) {
   let cl9 = document.createElement('p');
   
   let like = document.createElement('button');
-  const likes = document.createElement('span');
-  let num_likes = Number(window.localStorage.getItem(temple.letter));
+  // const likes = document.createElement('span');
+  // let num_likes = Number(window.localStorage.getItem(temple.letter));
   
 
   console.log(temple);
@@ -60,9 +64,9 @@ function displayTemples(temple) {
   
   like.setAttribute('src', temple.like);
   
-  like.setAttribute('type', 'button');
-  like.setAttribute('class', 'like');
-  like.setAttribute('id', temple.letter);
+  // like.setAttribute('type', 'button');
+  // like.setAttribute('class', 'like');
+  // like.setAttribute('id', temple.letter);
 
   // templeName.innerHTML = temple.templeName;
   // address .innerHTML = `Address: ${temple.address}`;
@@ -95,6 +99,8 @@ function displayTemples(temple) {
   groundbreaking.textContent = `${temple.grndbrkDate}`;
   label7.textContent = `${temple.label7}`;
   dedication.textContent = `${temple.dedication}`;
+  session.textContent = `${temple.session}`;
+
   closures.textContent = `${temple.clschedule}`;
   cl1.textContent = `${temple.cl1}`;
   cl2.textContent = `${temple.cl2}`;
@@ -125,6 +131,7 @@ function displayTemples(temple) {
   card.appendChild(groundbreaking);
   card.appendChild(label7);
   card.appendChild(dedication);
+  card.appendChild(session);
   card.appendChild(closures);
   card.appendChild(cl1);
   card.appendChild(cl2);
