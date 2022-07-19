@@ -14,26 +14,26 @@ fetch(requestURL)
 function displayTemple(temple) {
   
     let card = document.createElement("section");
-    let name = document.createElement("h1");
+    let name = document.createElement("h2");
     let img = document.createElement("img");
     let footer = document.createElement("div");
-    let lOne = document.createElement("p");
-    let lTwo = document.createElement("p");
+    let address = document.createElement("p");
+    let city = document.createElement("p");
 
     console.log(temple);
 
     name.textContent = temple.templeName;
+    address.textContent = temple.address;
+    city.textContent = temple.city;
 
-    lOne.textContent = temple.address;
 
-
-    footer.appendChild(lOne);
-    footer.appendChild(lTwo);
+    footer.appendChild(address);
+    footer.appendChild(city);
     card.appendChild(name);
     card.appendChild(img);
     card.appendChild(footer);
 
-    document.querySelector("div.spotlight");
+    document.querySelector("div#spotlight").appendChild(card);
   }
 
 

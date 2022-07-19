@@ -1,7 +1,7 @@
 {
     "temples": [
         {
-            "img": "./images/winterqarters600.webp",
+            "img": "images/winterqarters600.webp",
             "templeName": "Winter Quarters, NE",
             "label1": "Address: ",
             "address": "8283 N 34th St",
@@ -23,7 +23,7 @@
             "link": "href=index.html"
         },
         {
-            "img": "./images/logantemple600.webp",
+            "img": "images/logantemple600.webp",
             "templeName": "Logan, UT",
             "label1": "Address: ",
             "address": "175 North 300 East",
@@ -47,7 +47,7 @@
             "link": "href=index.html"
         },
         {
-            "img": "./images/idahofalls600.webp",
+            "img": "images/idahofalls600.webp",
             "templeName": "Idaho Falls, ID",
             "label1": "Address: ",
             "address": "1000 Memorial Dr",
@@ -71,7 +71,7 @@
             "link": "href=index.html"
         },
         {
-            "img": "./images/sandiego600.webp",
+            "img": "images/sandiego600.webp",
             "templeName": "San Diego, CA",
             "label1": "Address: ",
             "address": "7474 Charmant Dr",
