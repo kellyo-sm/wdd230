@@ -102,7 +102,7 @@ function displayTemples(temple) {
   session.textContent = `${temple.session}`;
   sesschedule.textContent = `${temple.sesschedule}`;
   ordinance.textContent = `${temple.ordinance}`;
-  ordschedule.textContent = `${temple.ordschedule}`;
+  ordschedule.textContent = `${temple.ordSchedule}`;
   closures.textContent = `${temple.clschedule}`;
   cl1.textContent = `${temple.cl1}`;
   cl2.textContent = `${temple.cl2}`;
