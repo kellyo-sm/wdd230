@@ -100,7 +100,9 @@ function displayTemples(temple) {
   label7.textContent = `${temple.label7}`;
   dedication.textContent = `${temple.dedication}`;
   session.textContent = `${temple.session}`;
-
+  sesschedule.textContent = `${temple.sesschedule}`;
+  ordinance.textContent = `${temple.ordinance}`;
+  ordschedule.textContent = `${temple.ordschedule}`;
   closures.textContent = `${temple.clschedule}`;
   cl1.textContent = `${temple.cl1}`;
   cl2.textContent = `${temple.cl2}`;
@@ -132,6 +134,9 @@ function displayTemples(temple) {
   card.appendChild(label7);
   card.appendChild(dedication);
   card.appendChild(session);
+  card.appendChild(sesschedule);
+  card.appendChild(ordinance);
+  card.appendChild(ordschedule);
   card.appendChild(closures);
   card.appendChild(cl1);
   card.appendChild(cl2);
