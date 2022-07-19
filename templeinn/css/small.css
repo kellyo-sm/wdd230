@@ -428,6 +428,10 @@ main .cards {
     margin-bottom: 1rem;
 }
 
+.cards .like {
+    border: none;
+}
+
 /********************
     Services
 ********************/

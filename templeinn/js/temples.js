@@ -42,7 +42,9 @@ function displayTemples(temple) {
   let cl7 = document.createElement('p');
   let cl8 = document.createElement('p');
   let cl9 = document.createElement('p');
-  let like = document.createElement('img');
+  let like = document.createElement('button');
+  const likes = document.createElement('span');
+  let num_Likes = Number(window.localStorage.getItem(temple.letter))
   
 
   console.log(temple);
@@ -90,6 +92,7 @@ function displayTemples(temple) {
   cl7.textContent = `${temple.cl7}`;
   cl8.textContent = `${temple.cl8}`;
   cl9.textContent = `${temple.cl9}`;
+  like.innerHTML
   
           
   // Add/append the section(card) with the h2 element
