@@ -85,7 +85,7 @@ header {
 }
 
 .logo {
-    margin-top: 2rem;
+    margin-top: 2.4rem;
     margin-right: 1.2rem;
 }
 
@@ -111,7 +111,7 @@ header {
 
 #title-big {
     margin-left: 1rem;
-    
+    font-size: 5rem;
    
 }
 
@@ -210,7 +210,7 @@ main {
 
 main h1 {
     grid-column: 1/5;
-    margin: 4rem auto;
+    margin: 2rem auto;
     font-size: 3rem;
 }
 
@@ -328,7 +328,7 @@ main h1 {
 
 #page-info {
     
-    margin: 3rem auto;
+    margin: 1rem auto;
     max-width: 400px;
 }
 
@@ -673,7 +673,7 @@ form p {
 
 .missimg {
     grid-column: 1/5;
-    margin: 4rem auto;    
+    margin: 1rem auto;    
 }
 
 .missimg picture {
