@@ -13,12 +13,17 @@ fetch(requestURL)
 
 function displayTemple(temple) {
   
-    let card = document.createElement("section");
+    let card = document.createElement("article");
     let name = document.createElement("h2");
     let img = document.createElement("img");
     let footer = document.createElement("div");
-    let address = document.createElement("p");
-    let city = document.createElement("p");
+    let address = document.createElement("h4");
+    let city = document.createElement("h4");
+    let country = document.createElement("h4");
+    let serviceslabel = document.createElement("h4");
+    let services = document.createElement("p");
+
+  
 
     console.log(temple);
 
@@ -30,14 +35,21 @@ function displayTemple(temple) {
     name.textContent = temple.templeName;
     address.textContent = temple.address;
     city.textContent = temple.city;
-
+    country.textContent = temple.country;
+    serviceslabel.textContent = temple.label4;
+    services.textContent = temple.services;
     
 
     footer.appendChild(address);
     footer.appendChild(city);
+    footer.appendChild(country);
     card.appendChild(name);
     card.appendChild(img);
     card.appendChild(footer);
+    card.appendChild(serviceslabel);
+    card.appendChild(services);
+
+    
 
     document.querySelector("div#spotlight").appendChild(card);
   }
@@ -53,13 +65,25 @@ function displayTemple(temple) {
 // }
 
 
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
+// function shuffleArray(array) {
+//     for (var i = array.length - 1; i > 0; i--) {
+//         var j = Math.floor(Math.random() * (i - 3));
 
-        var temp = array[i];
-        array[j] = array[j];
-        array[i] = temp;
-    }
-    return array;
+//         var temp = array[i];
+//         array[i] = array[j];
+//         array[j] = temp;
+//     }
+//     return array;
+// }
+
+function shuffleArray(array) {
+  let spotLight = array.length;
+  while (0 !== spotLight) {
+    let randId = Math.floor(Math.random() * spotLight);
+    spotLight -= 1;
+    let tmp = array[spotLight];
+    array[spotLight] = array[randId];
+    array[randId] = tmp;
+  }
+  return array;
 }

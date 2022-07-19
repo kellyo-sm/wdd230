@@ -58,7 +58,7 @@
             "label3": "E-mail: ",
             "email": "idahofallstemple@lds.org",
             "label4": "Services: ",
-            "services": "Clothing Rental Available\nDistribution Center Nearby",
+            "services": "Clothing Rental Available\n <br> Distribution Center Nearby",
             "label5": "Announced: ",
             "announcements": "3 March 1937",
             "label6": "Groundbreaking: ",
