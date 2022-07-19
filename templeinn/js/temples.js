@@ -42,6 +42,8 @@ function displayTemples(temple) {
   let cl7 = document.createElement('p');
   let cl8 = document.createElement('p');
   let cl9 = document.createElement('p');
+  let like = document.createElement('img');
+  let clicked = document.createElement('img');
 
   console.log(temple);
 
