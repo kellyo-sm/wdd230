@@ -22,7 +22,7 @@ function displayTemple(temple) {
     let country = document.createElement("h4");
     let serviceslabel = document.createElement("h4");
     let services = document.createElement("p");
-
+    let services2 = document.createElement("p");
   
 
     console.log(temple);
@@ -38,6 +38,7 @@ function displayTemple(temple) {
     country.textContent = temple.country;
     serviceslabel.textContent = temple.label4;
     services.textContent = temple.services;
+    services2.textContent = temple.services2;
     
 
     footer.appendChild(address);
@@ -48,7 +49,7 @@ function displayTemple(temple) {
     card.appendChild(footer);
     card.appendChild(serviceslabel);
     card.appendChild(services);
-
+    card.appendChild(services2);
     
 
     document.querySelector("div#spotlight").appendChild(card);

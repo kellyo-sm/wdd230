@@ -33,7 +33,7 @@ function displayTemples(temple) {
   let groundbreaking = document.createElement('p');
   let label7 = document.createElement('h3');
   let dedication = document.createElement('p');
-  let closures = document.createElement('h4');
+  let closures = document.createElement('h3');
   let cl1 = document.createElement('p');
   let cl2 = document.createElement('p');
   let cl3 = document.createElement('p');
@@ -44,7 +44,7 @@ function displayTemples(temple) {
   let cl8 = document.createElement('p');
   let cl9 = document.createElement('p');
 
-
+  console.log(temple);
 
 
   // Build the image attributes by using the setAttribute mefor the src, alt, and loading attribute values. (Fill inblank with the appropriate variable).
@@ -57,9 +57,9 @@ function displayTemples(temple) {
   // Change the textContent property of the h3 element to conthe companies full name
   // templeName.textContent = `${temple.templeName}`;
   templeName.textContent = temple.templeName;
-  templeName.classList.add("tName");
+  // templeName.classList.add("tName");
   label1.textContent = temple.label1;
-  label1.classList.add("label1");
+  // label1.classList.add("label1");
   address.textContent = `${temple.address}`;
   city.textContent = `${temple.city}`;
   country.textContent = `${temple.country}`;
@@ -102,13 +102,12 @@ function displayTemples(temple) {
   group.appendChild(announcement);
   group.appendChild(groundbreaking);
   group.appendChild(dedication);
-  group.appendChild(button);
-  group.appendChild(link);
+  
             
           
   // Add/append the existing HTML div with the cards class the section(card)
   //document.querySelector('div.cards').appendChild(card);
   // groups.append(group);
-  document.querySelector(".cards").appendChild(card);
+  document.querySelector("div.cards").appendChild(card);
           
 };
