@@ -43,7 +43,7 @@ function displayTemples(temple) {
   let cl8 = document.createElement('p');
   let cl9 = document.createElement('p');
   let like = document.createElement('img');
-  let clicked = document.createElement('img');
+  
 
   console.log(temple);
 
@@ -52,7 +52,11 @@ function displayTemples(temple) {
   img.setAttribute('src', temple.img);
   img.setAttribute('alt', `${temple.templeName}`);
   img.setAttribute('loading', 'lazy');
-  img.classList.add("img");
+  img.classList.add('img');
+
+  like.className = 'like';
+  like.setAttribute('src', `${temple.like}`);
+  like.setAttribute('alt', 'like button');
 
           
   // Change the textContent property of the h3 element to conthe companies full name
@@ -115,6 +119,7 @@ function displayTemples(temple) {
   card.appendChild(cl7);
   card.appendChild(cl8);
   card.appendChild(cl9);
+  card.appendChild(like);
   
             
           
