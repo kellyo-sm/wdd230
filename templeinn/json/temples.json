@@ -19,8 +19,17 @@
             "grndbrkDate": "28 November 1999",
             "label7": "Dedication: ",
             "dedication": "22 April 2001",
-            "button": "Temple Schedule and Closures",
-            "link": "href=index.html"
+            "clschedule" : "Temple Closures",
+            "cl1" : "Monday, 29 August 2022 - Monday, 26 September 2022",
+            "cl2" : "Saturday, 1 October 2022",
+            "cl3" : "Thursday, 24 November 2022",
+            "cl4" : "Saturday, 24 December 2022",
+            "cl5" : "Saturday, 31 December 2022",
+            "cl6" : "Monday, 13 March 2023 - Monday, 20 March 2023",
+            "cl7" : "Saturday, 1 April 2023",
+            "cl8" : "Tuesday, 4 July 2023",
+            "cl9" : "Monday, 14 August 2023 - Monday, 18 December 2023"
+
         },
         {
             "img": "images/logantemple600.webp",

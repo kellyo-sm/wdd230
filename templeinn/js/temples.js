@@ -13,8 +13,8 @@ fetch(requestURL)
 
 function displayTemples(temple) {
   // Create elements to add to the document 
-  let card = document.createElement('section');
-  let picture = document.createElement('img');        
+  let card = document.createElement('article');
+  let img = document.createElement('img');        
   let group = document.createElement('div');
   let templeName = document.createElement('h2');
   let label1 = document.createElement('h3');
@@ -33,14 +33,25 @@ function displayTemples(temple) {
   let groundbreaking = document.createElement('p');
   let label7 = document.createElement('h3');
   let dedication = document.createElement('p');
-  let button = document.createElement('a');
-  let link = document.createElement('a');
+  let closures = document.createElement('h4');
+  let cl1 = document.createElement('p');
+  let cl2 = document.createElement('p');
+  let cl3 = document.createElement('p');
+  let cl4 = document.createElement('p');
+  let cl5 = document.createElement('p');
+  let cl6 = document.createElement('p');
+  let cl7 = document.createElement('p');
+  let cl8 = document.createElement('p');
+  let cl9 = document.createElement('p');
+
+
+
 
   // Build the image attributes by using the setAttribute mefor the src, alt, and loading attribute values. (Fill inblank with the appropriate variable).
-  picture.setAttribute('src', temple.picture);
-  picture.setAttribute('alt', `${temple.templeName}`);
-  picture.setAttribute('loading', 'lazy');
-  picture.classList.add("tImg");
+  img.setAttribute('src', temple.img);
+  img.setAttribute('alt', `${temple.templeName}`);
+  img.setAttribute('loading', 'lazy');
+  img.classList.add("img");
 
           
   // Change the textContent property of the h3 element to conthe companies full name
@@ -64,12 +75,20 @@ function displayTemples(temple) {
   groundbreaking.textContent = `${temple.groundbreaking}`;
   label7.textContent = `${temple.label7}`;
   dedication.textContent = `${temple.dedication}`;
-  button.textContent = `${temple.button}`;
-  link.textContent = `${temple.link}`;
-           
+  closures.textContent = `${temple.clschedule}`;
+  cl1.textContent = `${temple.cl1}`;
+  cl2.textContent = `${temple.cl2}`;
+  cl3.textContent = `${temple.cl3}`;
+  cl4.textContent = `${temple.cl4}`;
+  cl5.textContent = `${temple.cl5}`;
+  cl6.textContent = `${temple.cl6}`;
+  cl7.textContent = `${temple.cl7}`;
+  cl8.textContent = `${temple.cl8}`;
+  cl9.textContent = `${temple.cl9}`;
+  
           
   // Add/append the section(card) with the h2 element
-  group.appendChild(picture);
+  group.appendChild(img);
   group.appendChild(templeName);
   group.appendChild(label1);
   group.appendChild(address);
