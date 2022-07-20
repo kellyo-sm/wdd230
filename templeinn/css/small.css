@@ -201,17 +201,24 @@ nav ul li a {
 ****************/
 
 main {
-    max-width: 1400px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(4, 1fr));
+    grid-template-columns: repeat(autofit, minmax(2, 1fr));
 }
 
 main h1 {
-    grid-column: 1/5;
-    margin: 2rem auto;
     font-size: 3rem;
+}
+
+.pageIntro {
+    margin: 0 5rem 0 8rem;
+}
+
+#page-info {
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .band {
@@ -223,40 +230,29 @@ main h1 {
 /* **************
     Home Page
 ****************/
-.pageIntro {
-    grid-column: 1/5;
-}
-
-.homep2 {
-    max-width: 350px;
-    grid-column: 1/5; 
-    margin:6rem auto 2rem auto;
-    
-}
 
 .hero {
-    grid-column: 1/5;
-    display: flex;
-    justify-content: center;
-    margin: 4rem 5rem 4rem 0;
-    
+    grid-column: 1;
+    margin: 3rem auto;
 }
 
 .heroimg {
+    visibility: hidden;
     position: absolute;
-    border: 1px solid #584e50;
-    padding: 1rem 1rem 0.8rem 1rem;
+}
+
+.smallhero {
+   position: relative;
+   margin: 2rem auto;
 }
 
 .travel {
-    position: relative;
-    max-width: 300px;
     padding: 1rem;
-    margin: 10rem 0 0 55rem;
     background-color: #e0d4d2;
     border: 1rem solid #E5E6E4;
     box-shadow: 3px 7px 3px #584e50;
-
+    max-width: 300px;
+    margin-top: 2rem ;
 }
 
 .travel h2 {
@@ -271,14 +267,20 @@ main h1 {
     text-align: right;
 }
 
+.homep2 {
+    max-width: 350px;
+    grid-column: 1; 
+    margin:3rem auto;
+    
+}
 /**********************
     Section Articles
 **********************/
 
 .container {
-    grid-column: 1/5;
-    display: flex;
-    margin: 1rem;
+    grid-column: 1;
+    display: block;
+    margin: 1rem auto;
     justify-content: center;
     
 }
@@ -318,53 +320,12 @@ iframe {
 }
 
 /********************
-    Temple Spotlight
-********************/
-
-#templeSpot {
-    grid-column: 3/5;
-    max-width: 650px;
-    
-}
-
-#spotlight {
-    margin: 2rem auto;
-}
-
-#spotlight article {
-    margin: 2rem;
-    border: 1px solid #584e50;
-    padding: 1rem;
-    background: linear-gradient(0.25turn,
-        #847577,
-        #A6A2A2,
-        #F8EDEB,
-        #A6A2A2,
-        #847577);
-}
-
-#spotlight h2 {
-    background-color: rgba(248, 237, 235, 0.75);
-    font-size: 1.7rem;
-    padding: 1rem;
-    position: absolute;
-    margin-top: 3rem;
-    border-bottom: 2px solid #584e50;
-    border-top: 2px solid #584e50;
-}
-
-#spotlight img {
-    max-width: 450px;
-}
-
-
-/********************
     Weather
 ********************/
 
 .weather-section {
-    grid-column: 1/3;
-    margin: 5rem 0 0 5rem;
+    grid-column: 1;
+    margin: 5rem auto;
     max-width: 500px;
     
 }
@@ -400,27 +361,52 @@ figcaption {
     margin: 2rem;
 }
 
-
-
 /********************
-    Temples Page
+    Temple Spotlight
 ********************/
 
-#page-info {
-    
-    margin: 1rem auto;
-    max-width: 400px;
+#templeSpot {
+    grid-column: 1;
+    max-width: 700px;
+   margin: 0 auto;
 }
+
+#spotlight {
+    margin: 2rem auto;
+}
+
+#spotlight article {
+    margin: 2rem;
+    border: 1px solid #584e50;
+    padding: 1rem;
+    background: linear-gradient(0.25turn,
+        #847577,
+        #A6A2A2,
+        #F8EDEB,
+        #A6A2A2,
+        #847577);
+}
+
+#spotlight h2 {
+    background-color: rgba(248, 237, 235, 0.75);
+    font-size: 1.7rem;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 3rem;
+    border-bottom: 2px solid #584e50;
+    border-top: 2px solid #584e50;
+}
+
+#spotlight img {
+    max-width: 250px;
+}
+
+
+
 
 /********************
     Temples Cards
 ********************/
-
-/* #temple-grid {
-    grid-column: 1/5;
-    margin: 2rem auto;
-        
-} */
 
 
 .templeCards {
@@ -485,6 +471,11 @@ main .cards {
 
 .cards p {
     margin-bottom: 1rem;
+}
+
+.cards button {
+    font-size: 1.6rem;
+    margin: 0.5rem 0 0 2.3rem;
 }
 
 
