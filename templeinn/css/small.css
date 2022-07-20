@@ -338,12 +338,12 @@ main h1 {
 
 #weatherDiv, #threedayWeather {
     grid-column: 1;
-    margin: 5rem auto;
+    margin: 2rem auto;
     max-width: 400px;
 }
 
 #todayWeather h2, #threedayWeather h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 0.4rem;
     margin: 0 auto;
     border-bottom: 2px solid #584e50;
 }
@@ -356,18 +356,10 @@ figcaption {
     font-size: 1rem;
 }
 
-
-.weather-section section h2 {
-    font-size: 2rem;
+#weather-icon {
+    width: 3rem;
 }
 
-.weather-icon {
-    width: 7rem;
-}
-
-#windspeed  {
-    margin: 2rem;
-}
 
 /********************
     Temple Spotlight

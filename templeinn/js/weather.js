@@ -28,30 +28,28 @@ fetch(url)
     document.querySelector('figcaption').textContent = jsObject.current.weather[0].description;
     document.querySelector("#humidity").innerHTML = humidity;
     
-   const d1Img = `https://openweathermap.org/img/w/${weatherData.daily[0].weather[0].icon}.png`;
-   const d1Desc = weatherData.daily[0].weather[0].description;
 
-  img1.setAttribute('src', d1Img);
-  img1.setAttribute('alt', d1Desc);
+    const today = new Date()
 
-  day1.innerHTML = `<strong>Temp:</strong> ${weatherData.daily[0].temp.day} | <strong>Humidity: </strong>${weatherData.daily[0].humidity}`;
+    for (let i = 0; i < 3; i++) {
+        const dayForecast = jsObject.daily[i];
+        const idNumber = i + 2;
+        const dayTemp = dayForecast.temp.day;
 
-  const d2Img = `https://openweathermap.org/img/w/${weatherData.daily[1].weather[0].icon}.png`;
-  const d2Desc = weatherData.daily[1].weather[0].description;
+        const dayDate = new Date(today.getTime());
+        dayDate.setUTCHours(24 * (i+1), 0 ,0);
+        
 
-  img2.setAttribute('src', d2Img);
-  img2.setAttribute('alt', d2Desc);
+    document.querySelector('#temp' + idNumber).textContent = dayTemp.toFixed(0);
+    document.querySelector('#weather-icon' + idNumber).src = imgurl + dayForecast.weather[0].icon+".png";
+    document.querySelector('#day1' + idNumber).textContent =  dayDate.toLocaleDateString('en-us', { weekday: 'long'})
+    document.querySelector('#day2' + idNumber).textContent =  dayDate.toLocaleDateString('en-us', { weekday: 'long'})
+    document.querySelector('#day3' + idNumber).textContent =  dayDate.toLocaleDateString('en-us', { weekday: 'long'})
+        
+    }
+    
 
-  day2.innerHTML = `<strong>Temp:</strong> ${weatherData.daily[1].temp.day} | <strongHumidity:/strong> >${weatherData.daily[1].humidity}<`;
-
-  const d3Img = `https://openweathermap.org/img/w/${weatherData.daily[2].weather[0].icon}.png`;
-  const d3Desc = weatherData.daily[2].weather[0].description;
-
-  img3.setAttribute('src', d3Img);
-  img3.setAttribute('alt', d3Desc);
-
-  day3.innerHTML = `<strong>Temp: </strong>${weatherData.daily[2].temp.day} | <strong>Humidity: </strong>${weatherData.daily[2].humidity}`;
-
+   
 
 });
 

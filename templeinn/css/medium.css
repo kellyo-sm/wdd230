@@ -44,7 +44,7 @@
 
     #weatherDiv, #threedayWeather {
         grid-column: 2/3;
-        margin: 5rem auto;
+        margin: 3rem auto;
         max-width: 400px;
     }
 
@@ -55,7 +55,7 @@
     }
 
     #templeSpot {
-        margin: -17rem auto 0.3rem auto;
+        margin: -16rem auto 0.3rem auto;
         grid-column: 3/5;
         max-width: 550px;
         
