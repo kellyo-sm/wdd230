@@ -64,6 +64,7 @@ a button {
 
 }
 
+
 /* **************
      Header
 ****************/
@@ -133,6 +134,22 @@ header {
     margin-top: -3rem;
     font-size: 1.2rem;
     
+}
+
+/* ********************
+    Emergency Broadcast
+***********************/
+
+.ebroad {
+    margin: 0 auto;
+    border: none;
+    background-color: #A6A2A2;
+    color: #584e50;
+    display: flex;
+}
+
+.alert {
+    background-color: transparent;
 }
 
 /* **************
@@ -314,25 +331,20 @@ main h1 {
     margin: 1rem;
 }
 
-iframe {
-    max-width: 100px;
-    max-height: 100px;
-}
 
 /********************
     Weather
 ********************/
 
-.weather-section {
+#weatherDiv, #threedayWeather {
     grid-column: 1;
     margin: 5rem auto;
-    max-width: 500px;
-    
+    max-width: 400px;
 }
 
-.weather-section h2 {
+#todayWeather h2, #threedayWeather h2 {
     padding-bottom: 2rem;
-    margin: 0 8rem 1rem 8rem;
+    margin: 0 auto;
     border-bottom: 2px solid #584e50;
 }
 
@@ -367,7 +379,8 @@ figcaption {
 
 #templeSpot {
     grid-column: 1;
-    max-width: 700px;
+
+    max-width: 600px;
    margin: 0 auto;
 }
 
@@ -770,15 +783,18 @@ form p {
 ****************/
 
 .missimg {
-    grid-column: 1/5;
+    grid-column: 1/2;
+    
     margin: 1rem auto;    
 }
 
 .missimg picture {
+    
     margin: 0 12px;
 }
 
 .missimg img {
+    max-width: 85%;
     padding: 1rem;
     background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
 }
@@ -832,6 +848,10 @@ form p {
 
 .imageResource, ul li {
     list-style-type: none;
+}
+
+#api {
+    margin: 2rem auto;
 }
 
 /* **************
@@ -989,6 +1009,11 @@ footer ul {
     grid-column: 4;
     grid-row: 2;
     margin-right: 2rem;
+}
+
+iframe {
+    max-width: 150px;
+    max-height: 150px;
 }
 
 /* .address {
