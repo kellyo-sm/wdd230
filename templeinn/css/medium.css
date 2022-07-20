@@ -5,7 +5,20 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, min-max(4, 1fr));
     }
+    #title-big {
+        margin-left: 1rem;
+        font-size: 5rem;
     
+    }
+    
+    #title-small {
+        font-size: 3rem;
+    }
+
+        .logo img {
+            max-width: 100%;
+        }
+
     .pageIntro {
         grid-column: 1/5;
         margin: 0 auto;
