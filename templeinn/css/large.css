@@ -13,6 +13,13 @@
         
     }
 
+    main .cards {
+        display: flex;
+        grid-column: 1/5;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
     .card .row {
         grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
     }

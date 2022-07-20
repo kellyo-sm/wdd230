@@ -64,40 +64,36 @@
 
     <main>
 
-        <div class="pageIntro">
+        <div class="pageIntro resIntro">
             <h1>Make Your Reservation</h1>
             <p id="page-info">Please fill out the form below and your reservation request and you will receive a confirmation in your email within a few minutes.</p>
        </div>
         <form action="#" method="get/post" autocomplete="off" id="contact-form">
-            <p class="col-md-1">First Name <input type="text" size="25" maxlength="99" required></p>
-            <p class="col-md-1">Last Name <input type="text" size="25" maxlength="99" required></p>
-            <p class="col-md-2">Address <input type="text" size="20" maxlength="99" required></p>
-            <p class="col-md-2">Home State/Country <input placeholder="State/Country" type="text" size="25" maxlength="99" required></p>
-            <p class="col-md-4">Email<input placeholder="email@email.com" type="email" size="30" maxlength="99" required></p>
-            <p class="col-md-5">Telephone <input placeholder="000-000-0000" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" maxlength="99" required></p>
-            <div class="col-md-6" id="destination">
+            <p >First Name <input type="text" size="25" maxlength="99" required></p>
+            <p>Last Name <input type="text" size="25" maxlength="99" required></p>
+            <p>Address <input type="text" size="20" maxlength="99" required></p>
+            <p>Home State/Country <input placeholder="State/Country" type="text" size="25" maxlength="99" required></p>
+            <p>Email<input placeholder="email@email.com" type="email" size="30" maxlength="99" required></p>
+            <p>Telephone <input placeholder="000-000-0000" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" maxlength="99" required></p>
+            <div id="destination">
                 <p>Select Your Destination
                     <select name="choices" size="1">
-                        <option value="choose">------------Select-------------</option>
+                        <option value="choose">---------------------------------Select-----------------------------------------</option>
                         <option value="winterquarters">Winter Quarters, Nebraska</option>
                         <option value="logan">Logan, Utah</option>
-                        <option value="hamilton">Hamilton, New Zealand</option>
                         <option value="idahofalls">Idaho Falls, Idaho</option>
-                        <option value="melbourne">Melbourne, Australia</option>
-                        <option value="rome">Rome, Italy</option>
                         <option value="sandiego">San Diego, California</option>
-                        <option value="rexburg">Rexburg, Idaho</option>
                     </select>
                 </p>
             </div>
             
             
             <div class="checks">
-                </div>
+                </div class="checksdiv">
                     <input class="form-control" type="date" required>
                     <span class="form-label">Check In</span>
                 <div>
-                <div>
+                <div class="checksdiv">
                     <input class="form-control" type="date" required>
                     <span class="form-label">Check Out</span>
                 </div>
@@ -117,7 +113,7 @@
                     <span class="form-label">Rooms</span>
                 </div>
             </div>
-            <div class="col-med-8">
+            <div>
                 <div class="form-group">
                     <select class="form-control" required>
                         <option value="" selected hidden># of Adults</option>
@@ -128,7 +124,7 @@
                     <span class="form-label">Adults</span>
                 </div>
             </div>
-            <div class="col-med-8">
+            <div>
                 <div class="form-group">
                     <select class="form-control" required>
                         <option value="" selected hidden># of Children</option>

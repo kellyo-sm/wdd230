@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn and Suites</title>
-    <meta name="description"
-        content="Welcome to the Temple Inn and Suites!  Find your perfect stay as you perfect yourself!">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="Final Project BYU-Idaho WDD230 Kelly'O Smith">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,8 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
@@ -51,9 +49,10 @@
             <ul id="primNav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temples.html">Temples</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
 
             </ul>
 
@@ -65,70 +64,62 @@
     </header>
 
     <main>
-        <div class="pageIntro">
-            <h1>Reception</h1>
-            <p id="page-info">At Temple Inn and Suites we have the perfect wedding reception hall for you.  Choose from either the classical themed hall, the modern hall or take your reception outside on our beautiful grounds at each one of our hotels.</p>
-        </div>
-        <div class="lg-container">
-            <picture id="img1">
-                <img src="images/receptiontable600.webp" alt="wedding reception table">
-            </picture>
-            <picture id="img2">
-                <img src="images/receptionhall600.webp" alt="wedding reception table">
-            </picture>
-            
-        </div>
 
-        <div class="lg-container">
-            <p>With each location, we offer delicious, crowd-pleasing catering, customizable reception halls, and friendly service.</p><br><br><br>
-            
-            <picture id="img3"><img src="images/outdoorreception600.1.webp" alt=""></picture>
 
-        </div>
-
-        <div class="lg-container">
-            <p>Take advantage of the high end technology and the elegant lighting in each hall to make your special day perfect!</p><br><br><br>
-            <picture id="img4">
-                <img src="images/outdoorreception400.1.webp" alt="wedding reception table">
-            </picture>
-            <picture id="img5">
-                <img src="images/receptionhall400.3.webp" alt="wedding reception table">
-            </picture>
-        
-        </div>
-
-        <div id="recinfo">
-            <div class="pageIntro">
-                <h2>Wedding Package Amenities</h2>
-                <p>We are dedicated to providing convenience, efficiency, and value to your wedding planning experience.</p>
-                <p>Our standard wedding package includes the following amenities:</p>
+        <div id="container">
+            <h1>Reception Hall</h1>
+            <h1>Reservation</h1>
+            <div class="underline">
             </div>
-            <ul id="reclist">
-                <li>280 padded wood, padded distressed wood, or white padded resin folding chairs for the indoor venue</li>
-                <li>35 five-foot round tables</li>
-                <li>8 barnwood eight-foot tables</li>
-                <li>Market lights in the garden</li>
-                <li>Private dressing area in the bridal cottage, and each venue in the hotel</li>
-                <li>Lighted and paved garden parking lot for all of our venues</li>
-                <li>Security and parking staff</li>
-                <li>Access to a variety of scenic spots for wedding photography</li>
-                <li>A variety of of decor, including flower arrangements, for table centerpieces</li>
-                <li>White china tableware and flatware</li>
-                <li>Stemmed glassware</li>
-            </ul>
-            <p>You may choose either the on-site caterer or select a caterer of your own.</p>
-        </div>
+            <div class="icon_wrapper">
 
-        <div id="resbtn">
-            <a href="receptionreservation.html"><button>Reserve Your Hall Today!</button></a>
-        </div>
-
+            </div>
+            <form action="#" method="post" id="contact_form">
+                <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                </div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                </div>
+                <div class="telephone">
+                    <label for="name"></label>
+                    <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+                </div>
+                <div id="destination">
+                    <p>Select Your Destination
+                        <select name="choices" size="1">
+                            <option value="choose">---------------------------------Select-----------------------------------------
+                            </option>
+                            <option value="winterquarters">Winter Quarters, Nebraska</option>
+                            <option value="logan">Logan, Utah</option>
+                            <option value="idahofalls">Idaho Falls, Idaho</option>
+                            <option value="sandiego">San Diego, California</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="subject">
+                    <label for="subject"></label>
+                    <select placeholder="Subject line" name="subject" id="subject_input" required>
+                        <option disabled hidden selected>Which Venue Would You Like?</option>
+                        <option>Garden</option>
+                        <option>Modern Reception</option>
+                        <option>Classical</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="I would like to know more about" id="message_input formbtn" cols="50"
+                        rows="5" required></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Send Message" class="formbtn" />
+                </div>
+            </form><!-- // End form -->
+        </div><!-- // End #container -->
     </main>
-
-
     <div class="band"></div>
-
-
     <footer>
         <div class="content">
             <div class="foot1">
@@ -166,12 +157,13 @@
             </div>
             <div class="assignment">
                 <p class="assignmentLine">&copy;<span id="year"></span> Temple Inn and Suites | <strong>Kelly'O
-                        Smith</strong> | WDD 230 Final Project | <span id="currentdate"></span></p>
-                        <script id="last" src="js/lastupdate.js"></script>
+                        Smith</strong> | WDD 230 Project | <span id="currentdate"></span></p>
+                <script id="last" src="js/lastupdate.js"></script>
             </div>
             <script src="js/main.js"></script>
         </div>
     </footer>
+
 </body>
 
 </html>

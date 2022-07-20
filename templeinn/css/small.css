@@ -213,7 +213,7 @@ main h1 {
 }
 
 .pageIntro {
-    margin: 0 5rem 0 8rem;
+    margin: 0 auto;
 }
 
 #page-info {
@@ -417,32 +417,15 @@ figcaption {
     margin: 2rem 0.2rem;
 }
 
-.templeButtons {
-    margin: 1rem;
-    
-}
-
-.templeInfo h2 {
-    margin: 2rem 0;
-    font-size: 2rem;
-}
-
 .all-images {
     border: 2px solid #584e50;
     padding: 10px;
 }
 
-/* .likeBtn {
-    font-size: 1.2rem;
-    background-color: transparent;
-} */
 
 main .cards {
-    display: flex;
-    grid-column: 1/5;
+    grid-column: 1;
     margin: 0 auto;
-    flex-wrap: wrap;
-
 }
 
 .cards article{
@@ -484,8 +467,8 @@ main .cards {
 ********************/
 
 #amenities {
-    max-width: 450px;
-    margin: 5rem 0 7rem 10rem;
+    max-width: 350px;
+    margin: 3rem auto;
 }
 
 
@@ -499,14 +482,13 @@ main .cards {
 #amenities-list {
     line-height: 2rem;
     text-align: left;
-    
 }
 
-#am-img2 {
-    max-width: 300px;
+#am-img {
     padding: 1rem;
-    float: right;
-    margin: 3rem 17rem 1rem 0;
+    max-width: 35%;
+    max-height: 20%;
+    margin: 0 1rem;
 }
 
 #specialized-grid {
@@ -520,17 +502,17 @@ main .cards {
 
 #specialized-list ul li {
     text-align: left;
-    margin-left: 6rem;
+    margin: 0 auto;
 }
 
 .serviceCards {
     background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
-    padding: 2rem;
+    
     border: 1px solid #584e50;
 }
 
 .serviceCards #image-grid {
-    display: flex;
+    display: block;
     justify-content: center;
     
 }
@@ -573,11 +555,16 @@ main .cards {
 /********************
     Reservations
 ********************/
+.resIntro {
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+
 
 form {
-    text-align: center;
-    max-width: 850px;
-    grid-column: 2/4;
+    text-align: left;
+    max-width: 350px;
+    grid-column: 1/5;
     margin: 3rem auto 10rem auto;
     padding: 2rem;
     color: #584e50;
@@ -608,7 +595,7 @@ form p input::placeholder {
 
 select {
     color: #847577;
-    margin: 1rem 0;
+    
 }
 
 form p {
@@ -629,7 +616,7 @@ form p {
 }
 
 #destination {
-    margin: 0 10rem;
+    margin: 0 auto;
 }
 
 #destination select {
@@ -637,19 +624,22 @@ form p {
 }
 
 .checks {
-    display: flex;
-    margin: 1rem 4rem;
+    /* display: flex; */
+    margin: 0.5rem 4rem;
+}
+
+.checksdiv{
+    margin: 2rem auto;
 }
 
 .numbers {
-    display: flex;
-    margin: 1rem 8rem;
+    display: block;
+    margin: 1rem auto;
 }
 
 .comment-container {
-    display: grid;
     margin: 1rem auto;
-    max-width: 850px;
+    max-width: 250px;
     height: 80px;
 }
 
@@ -723,12 +713,14 @@ form p {
 ********************/
 
 .lg-container {
-    grid-column: 1/5;
+    grid-column: 1/2;
+    max-width: 80%;
     margin: 2rem auto;
     
 }
 
 .lg-container img {
+    max-width: 100%;
     margin: 0 1rem;
     padding: 1rem;
     background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
@@ -749,8 +741,8 @@ form p {
 }
 
 #recinfo {
-    max-width: 550px;
-    grid-column: 1/5;
+    max-width: 65%;
+    grid-column: 1/2;
     margin: 2rem auto;
 }
 
@@ -887,8 +879,8 @@ select,
 textarea {
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
-    color: #474544;
+    border-bottom: solid 2px #847577;
+    color: #584e50;
     font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 1px;
