@@ -46,10 +46,9 @@ function displayTemples(temple) {
   let cl7 = document.createElement('p');
   let cl8 = document.createElement('p');
   let cl9 = document.createElement('p');
-  
   let like = document.createElement('button');
-  // const likes = document.createElement('span');
-  // let num_likes = Number(window.localStorage.getItem(temple.letter));
+  const likes = document.createElement('span');
+  let num_likes = Number(window.localStorage.getItem(temple.letter));
   
 
   console.log(temple);
@@ -62,21 +61,13 @@ function displayTemples(temple) {
   img.classList.add('img');
 
   
+  like.innerHTML = 'Like';
   like.setAttribute('src', temple.like);
+  like.setAttribute('alt', `${temple.like}`);
+  like.setAttribute('type', 'button');
+  like.setAttribute('class', 'like');
+  like.setAttribute('id', temple.letter);
   
-  // like.setAttribute('type', 'button');
-  // like.setAttribute('class', 'like');
-  // like.setAttribute('id', temple.letter);
-
-  // templeName.innerHTML = temple.templeName;
-  // address .innerHTML = `Address: ${temple.address}`;
-  // city.innerHTML = `Location: ${temple.city}`;
-  // phone.innerHTML = `Phone: ${temple.phone}`;
-  // email.innerHTML = `Email: ${temple.email}`;
-  // services.innerHTML = `Services: ${temple.services}`;
-  // closures.innerHTML = `Closing Schedule: ${temple.clschedule}`;
-  // likes.innerHTML = ' ' + num_likes + ' likes';
-
           
   // Change the textContent property of the h3 element to conthe companies full name
   // templeName.textContent = `${temple.templeName}`;
@@ -113,7 +104,7 @@ function displayTemples(temple) {
   cl7.textContent = `${temple.cl7}`;
   cl8.textContent = `${temple.cl8}`;
   cl9.textContent = `${temple.cl9}`;
-  
+  likes.innerHTML = ' ' + num_likes + ' likes';
   
           
   // Add/append the section(card) with the h2 element
@@ -148,20 +139,20 @@ function displayTemples(temple) {
   card.appendChild(cl8);
   card.appendChild(cl9);
   card.appendChild(like);
+  card.appendChild(likes);
   
-            
           
   // Add/append the existing HTML div with the cards class the section(card)
   //document.querySelector('div.cards').appendChild(card);
   // groups.append(group);
   document.querySelector("div.cards").appendChild(card);
 
-  // function Like() {
-  //   num_likes++;
-  //   localStorage.setItem(like.id, num_likes);
-  //   window.location.reload();
-  // }
+  function Like() {
+    num_likes++;
+    localStorage.setItem(like.id, num_likes);
+    window.location.reload();
+  }
 
-  // like.onclick = Like;
+  like.onclick = Like;
           
 };
