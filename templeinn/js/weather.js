@@ -14,37 +14,22 @@ const alertText = document.querySelector('.eText');
 
 const url = `https://api.openweathermap.org/data/2.5/onecall?lat=38.9807&lon=-77.1003&units=imperial&exclude=minutely,hourly&appid=4c30c204135027cef9944117fb3a6fbc`;
 
-apiFetch(url);
+const imgurl = `https://openweathermap.org/img/wn/`;
 
-async function apiFetch(apiURL) {
-  try {
-    const response = await fetch(apiURL);
-    if (response.ok) {
-      const data = await response.json();
-      displayResults(data);
-    } else {
-        throw Error(await response.text());
-    }
-  } catch (error) {
-        console.log(error);
-  }
-}
+fetch(url)
+.then((response) => response.json())
+.then((jsObject) => {
 
-function displayResults(weatherData) {
+    const temp = jsObject.current.temp.toFixed(0);
+    const humidity =jsObject.current.humidity;
 
-  currentOutlook.innerHTML = `<strong>${weatherData.current.temp.toFixed(0)} &#8457;</strong>`;
-
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  const desc = toTitleCase(weatherData.weather[0].description);
-
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  
-
-  humidity.innerHTML = `${weatherData.current.humidity}`;
-
-  const d1Img = `https://openweathermap.org/img/w/${weatherData.daily[0].weather[0].icon}.png`;
-  const d1Desc = weatherData.daily[0].weather[0].description;
+    document.querySelector('#current').textContent = temp;
+    document.querySelector('#weather-icon').src = imgurl+jsObject.current.weather[0].icon+".png";
+    document.querySelector('figcaption').textContent = jsObject.current.weather[0].description;
+    document.querySelector("#humidity").innerHTML = humidity;
+    
+   const d1Img = `https://openweathermap.org/img/w/${weatherData.daily[0].weather[0].icon}.png`;
+   const d1Desc = weatherData.daily[0].weather[0].description;
 
   img1.setAttribute('src', d1Img);
   img1.setAttribute('alt', d1Desc);
@@ -67,28 +52,7 @@ function displayResults(weatherData) {
 
   day3.innerHTML = `<strong>Temp: </strong>${weatherData.daily[2].temp.day} | <strong>Humidity: </strong>${weatherData.daily[2].humidity}`;
 
-  try {
-    let localTime = weather.alerts[0].end;
-    let date = new Date(localTime * 1000);
 
-    const hours = date.getHours();
-    const minutes = "0" + date.getMinutes();
-    const seconds = "0" + date.getSeconds();
-
-    const time = hours + ":" + minutes.substring(-2) + ":" + seconds.substring(-2);
-
-    alertText.innerHTML = `Issued for this location:  ${weather.alerts[0].event}  until ${time}`
-    } catch (error) {
-        document.querySelector(".ebroad").classList.add("closed");
-    }
-}
-
-function closeAlert() {
-    document.querySelector(".ebroad").classList.add("closed");
-}
-
-apiFetch();
-document.querySelector(".alert").addEventListener('click', closeAlert);
-
+});
 
 
